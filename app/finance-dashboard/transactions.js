@@ -1,4 +1,4 @@
-let Transactions = [
+let transactions = [
     { date: '2025-11-01', description: 'Grocery Store', amount: -54.23, category: 'Food' },
     { date: '2025-11-01', description: 'Coffee Shop', amount: -3.50, category: 'Food' },
     { date: '2025-11-01', description: 'Restaurant', amount: -28.90, category: 'Food' },
@@ -163,6 +163,7 @@ let Transactions = [
     { date: '2025-11-15', description: 'Bakery', amount: -5.75, category: 'Food' },
     { date: '2025-11-15', description: 'Pharmacy', amount: -32.10, category: 'Health' },
     { date: '2025-11-15', description: 'ATM Withdrawal', amount: -100.00, category: 'Cash' },
+    { date: '2025-11-26', description: 'Rent', amount: 1_000.00, category: 'Rent' },
 
     { date: '2025-11-16', description: 'Grocery Store', amount: -54.23, category: 'Food' },
     { date: '2025-11-16', description: 'Coffee Shop', amount: -3.50, category: 'Food' },
@@ -284,6 +285,7 @@ let Transactions = [
     { date: '2025-11-26', description: 'Bakery', amount: -5.75, category: 'Food' },
     { date: '2025-11-26', description: 'Pharmacy', amount: -32.10, category: 'Health' },
     { date: '2025-11-26', description: 'ATM Withdrawal', amount: -100.00, category: 'Cash' },
+    { date: '2025-11-26', description: 'Salary deposit', amount: 10_000.00, category: 'Salary' },
 
     { date: '2025-11-27', description: 'Grocery Store', amount: -54.23, category: 'Food' },
     { date: '2025-11-27', description: 'Coffee Shop', amount: -3.50, category: 'Food' },
@@ -305,7 +307,7 @@ let Transactions = [
     { date: '2025-11-28', description: 'Movie Tickets', amount: -15.00, category: 'Entertainment' },
     { date: '2025-11-28', description: 'Bakery', amount: -5.75, category: 'Food' },
     { date: '2025-11-28', description: 'Pharmacy', amount: -32.10, category: 'Health' },
-    { date: '2025-11-28', description: 'ATM Withdrawal', amount: -100.00, category: 'Cash' },
+    { date: '2025-11-28', description: 'Investion', amount: 2000.00, category: 'Invest' },
 
     { date: '2025-11-29', description: 'Grocery Store', amount: -54.23, category: 'Food' },
     { date: '2025-11-29', description: 'Coffee Shop', amount: -3.50, category: 'Food' },
@@ -330,4 +332,15 @@ let Transactions = [
     { date: '2025-11-30', description: 'ATM Withdrawal', amount: -100.00, category: 'Cash' },
 ]
 
-export default Transactions;
+let totalIncome = 0
+let totalExpense = 0
+
+for (let i = 0; i < transactions.length; i++) {
+    if (transactions[i].amount > 0) {
+        totalIncome += transactions[i].amount;
+    } else {
+        totalExpense += - transactions[i].amount;
+    }
+}
+let Savings = totalIncome - totalExpense;
+console.log("Total income: " + totalIncome, "Total expense: " + totalExpense, "and Savings: " + Savings);
