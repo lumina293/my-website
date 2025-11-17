@@ -344,3 +344,31 @@ for (let i = 0; i < transactions.length; i++) {
 }
 let Savings = totalIncome - totalExpense;
 console.log("Total income: " + totalIncome, "Total expense: " + totalExpense, "and Savings: " + Savings);
+
+let maxIncome = 0
+let minIncome = Infinity
+for (let i = 0; i < transactions.length; i++) {
+    if (transactions[i].amount > 0) {
+        if (transactions[i].amount > maxIncome) {
+            maxIncome = transactions[i].amount;
+        }
+        if (transactions[i].amount < minIncome) {
+            minIncome = transactions[i].amount;
+        }
+    }
+}
+console.log("The highest income transaction is: " + maxIncome + " The lowest income transaction is: " + minIncome)
+
+let maxExpense = 0
+let minExpense = -Infinity
+for (let i = 1; i < transactions.length; i++) {
+    if (transactions[i].amount < 0) {
+        if (transactions[i].amount < maxExpense) {
+            maxExpense = transactions[i].amount;
+        }
+        if (transactions[i].amount > minExpense) {
+            minExpense = transactions[i].amount;
+        }
+    }
+}
+console.log("The highest expense transaction is: " + maxExpense + " The lowest expense transaction is: " + minExpense)
