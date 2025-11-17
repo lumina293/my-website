@@ -15,7 +15,7 @@ side = 9
 let perimeterOfSquare = 4 * side
 console.log("Perimeter of aquare is: " + perimeterOfSquare)
 
-// Perimeter ofa circle
+// Perimeter of a circle
 radius = 8
 let perimeterOfCircle = 2 * Math.PI * radius
 console.log("Perimeter of circle is: " + perimeterOfCircle)
