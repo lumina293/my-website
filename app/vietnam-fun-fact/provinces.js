@@ -4785,7 +4785,7 @@ let provinces = [
         ],
         "idCardPrefix": "022",
         "areaInKm2": 6207.93,
-        "population": "1.362.88",
+        "population": 136288,
         "vehiclePlateCodes": [
             14
         ],
@@ -7635,7 +7635,7 @@ let provinces = [
             }
         ],
         "idCardPrefix": "033",
-        "areaInKm2": 4718.6,
+        "areaInKm2": 2514.8,
         "population": 3509100,
         "vehiclePlateCodes": [
             17,
@@ -10659,7 +10659,7 @@ let provinces = [
         ],
         "idCardPrefix": "042",
         "areaInKm2": 5994.45,
-        "population": 1317.2,
+        "population": 1622901,
         "vehiclePlateCodes": [
             38
         ],
@@ -11973,8 +11973,8 @@ let provinces = [
             }
         ],
         "idCardPrefix": "048",
-        "areaInKm2": 1284.73,
-        "population": 1220.19,
+        "areaInKm2": 11867,
+        "population": 3065628,
         "vehiclePlateCodes": [
             43,
             92
@@ -20448,3 +20448,86 @@ let provinces = [
         "telephoneCode": 290
     }
 ]
+
+console.log("Vietnam has " + provinces.length + " provinces")
+
+let biggestProvince = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].areaInKm2 > biggestProvince.areaInKm2) {
+       biggestProvince = provinces[i];
+    }
+}
+console.log("The biggest province is " + biggestProvince.name + " with an area of " + biggestProvince.areaInKm2 + " km²")
+
+let smallestProvince = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].areaInKm2 < smallestProvince.areaInKm2) {
+        smallestProvince = provinces[i];
+    }
+}
+console.log("The smallest province is " + smallestProvince.name + " with an area of " + smallestProvince.areaInKm2 + " km²")
+
+let mostPopulation = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].population > mostPopulation.population)
+    {
+        mostPopulation = provinces[i];
+    }
+}
+console.log("The most populated province is " + mostPopulation.name + " with a population of " + mostPopulation.population)
+
+let leastPopulation = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].population < leastPopulation.population) {
+        leastPopulation = provinces[i];
+    }
+}
+console.log("The least populated province is " + leastPopulation.name + " with a population of " + leastPopulation.population)
+
+let totalPopulation = 0
+for (let i = 0; i < provinces.length; i++) {
+    totalPopulation += provinces[i].population
+}
+console.log("The total population of Vietnam is " + totalPopulation)
+
+
+let avgPopulation = totalPopulation / provinces.length
+
+console.log("The average population of Vietnam provinces is: " + avgPopulation)
+
+
+let mostCommuneProvince = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].communes.length > mostCommuneProvince.communes.length) {
+        mostCommuneProvince = provinces[i]
+    }
+}
+console.log("The province with the most communes is: " + mostCommuneProvince.name + " with " + mostCommuneProvince.communes.length + " communes")
+
+let leastCommuneProvince = provinces [0]
+for (let i = 1; i < provinces.length; i++) {
+    if (provinces[i].communes.length < leastCommuneProvince.communes.length) {
+        leastCommuneProvince = provinces[i]
+    }
+}
+console.log("The province with the least communes is: " + leastCommuneProvince.name + " with " + leastCommuneProvince.communes.length + " communes")
+
+let totalCommunes = 0
+for (let i = 0; i < provinces.length; i++) {
+   totalCommunes += provinces[i].communes.length
+}
+console.log("The total number of communes in Vietnam is: " + totalCommunes)
+
+let avgCommunes = totalCommunes / provinces.length
+console.log("The average number of communes per province in Vietnam is: " + avgCommunes)
+
+let mostDensity = provinces[0].population / provinces[0].areaInKm2
+let mostDensityProvince = provinces[0]
+for (let i = 1; i < provinces.length; i++) {
+    let density = provinces[i].population / provinces[i].areaInKm2
+    if (density > mostDensity) {
+        mostDensity = density
+        mostDensityProvince = provinces[i]
+    }
+}
+console.log("The most densely populated province is: " + mostDensityProvince.name + " with a density of " + mostDensity + " people per km²")
