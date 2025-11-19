@@ -20454,7 +20454,7 @@ console.log("Vietnam has " + provinces.length + " provinces")
 let biggestProvince = provinces[0]
 for (let i = 1; i < provinces.length; i++) {
     if (provinces[i].areaInKm2 > biggestProvince.areaInKm2) {
-       biggestProvince = provinces[i];
+        biggestProvince = provinces[i];
     }
 }
 console.log("The biggest province is " + biggestProvince.name + " with an area of " + biggestProvince.areaInKm2 + " km²")
@@ -20469,8 +20469,7 @@ console.log("The smallest province is " + smallestProvince.name + " with an area
 
 let mostPopulation = provinces[0]
 for (let i = 1; i < provinces.length; i++) {
-    if (provinces[i].population > mostPopulation.population)
-    {
+    if (provinces[i].population > mostPopulation.population) {
         mostPopulation = provinces[i];
     }
 }
@@ -20514,7 +20513,7 @@ console.log("The province with the least communes is: " + leastCommuneProvince.n
 
 let totalCommunes = 0
 for (let i = 0; i < provinces.length; i++) {
-   totalCommunes += provinces[i].communes.length
+    totalCommunes += provinces[i].communes.length
 }
 console.log("The total number of communes in Vietnam is: " + totalCommunes)
 
@@ -20531,3 +20530,62 @@ for (let i = 1; i < provinces.length; i++) {
     }
 }
 console.log("The most densely populated province is: " + mostDensityProvince.name + " with a density of " + mostDensity + " people per km²")
+
+
+let communeNameCounts = new Map();
+for (let t = 0; t < provinces.length; t++) {
+    for (let x = 0; x < provinces[t].communes.length; x++) {
+        let communeName = provinces[t].communes[x].name
+        if (communeName === 'Tân Thành') {
+            console.log(communeName + ": " + communeNameCounts[communeName])
+        }
+        if (communeName in communeNameCounts) {
+            communeNameCounts[communeName] = communeNameCounts[communeName] + 1;
+        } else {
+            communeNameCounts[communeName] = 1
+        }
+    }
+}
+console.log(communeNameCounts)
+
+// communeNameCounts is a map
+// communeNameCounts = { 'Dĩ An': 1, 'An Phú': 2 } == { 'An Phú': 2, 'Dĩ An': 1 }
+// communeNameCounts['Dĩ An'] => 1
+
+// Cách 1: Kiểm tra lần lượt từng tên xã
+let name = ""
+let count = 0
+for (let communeName in communeNameCounts) {
+    if (communeNameCounts[communeName] > count) {
+        name = communeName
+        count = communeNameCounts[communeName]
+    }
+}
+console.log("Solution 1: The most common commune name is: " + name + " with a count of " + count)
+
+// Cách 2:
+// Convert to array of objects
+// arr = [ {name: 'Dĩ An', count: 1}, {name: 'An Phú', count: 2} ]
+let communeCountArr = []
+for (let name in communeNameCounts) {
+    communeCountArr.push({communeName: name, count: communeNameCounts[name]})
+}
+console.log(communeCountArr)
+
+let mostCommonNameCommune = communeCountArr[0]
+for (let  i = 1; i < communeCountArr.length; i++) {
+    if (communeCountArr[i].count > mostCommonNameCommune.count) {
+        mostCommonNameCommune = communeCountArr[i];
+    }
+}
+console.log("Solution 2: The most common commune name is: " + mostCommonNameCommune.communeName + " with a count of " + mostCommonNameCommune.count)
+
+// Cách 3
+// Sort by count descending
+// arr = [ {name: 'An Phú', count: 2}, {name: 'Dĩ An', count: 1} ]
+communeCountArr.sort((a, b) => b.count - a.count)
+console.log(communeCountArr)
+
+// Most common name is arr[0]
+let mostCommonCommuneName = communeCountArr[0]
+console.log("Solution 3: Most common commune name is: " + mostCommonCommuneName.communeName + " with a count of " + mostCommonCommuneName.count)
