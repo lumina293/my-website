@@ -372,3 +372,21 @@ for (let i = 1; i < transactions.length; i++) {
     }
 }
 console.log("The highest expense transaction is: " + maxExpense + " The lowest expense transaction is: " + minExpense)
+
+
+let expenseByCategories = {}
+for (let i = 0; i < transactions.length; i++) {
+    let tx = transactions[i]
+    // kiểm tra xem trong expenseByCategories đã có loại tx.category hay chưa
+    if (tx.category in expenseByCategories) {
+        // Nếu đã có, thì cộng thêm tx.amount vào expenseByCategories[tx.category]
+        //     Ví dụ: expenseByCategories['Food'] += -28.90
+        expenseByCategories[tx.category] = expenseByCategories[tx.category] + tx.amount
+    } else {
+        // Nếu chưa có, thì gán expenseByCategories[tx.category] = tx.amount
+        //     Ví dụ: expenseByCategories['Transport'] = -40.00
+        expenseByCategories[tx.category] = tx.amount
+    }
+}
+console.log(expenseByCategories)
+
