@@ -20536,9 +20536,6 @@ let communeNameCounts = new Map();
 for (let t = 0; t < provinces.length; t++) {
     for (let x = 0; x < provinces[t].communes.length; x++) {
         let communeName = provinces[t].communes[x].name
-        if (communeName === 'Tân Thành') {
-            console.log(communeName + ": " + communeNameCounts[communeName])
-        }
         if (communeName in communeNameCounts) {
             communeNameCounts[communeName] = communeNameCounts[communeName] + 1;
         } else {
