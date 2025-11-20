@@ -20543,11 +20543,6 @@ for (let t = 0; t < provinces.length; t++) {
         }
     }
 }
-console.log(communeNameCounts)
-
-// communeNameCounts is a map
-// communeNameCounts = { 'Dĩ An': 1, 'An Phú': 2 } == { 'An Phú': 2, 'Dĩ An': 1 }
-// communeNameCounts['Dĩ An'] => 1
 
 // Cách 1: Kiểm tra lần lượt từng tên xã
 let name = ""
@@ -20570,7 +20565,7 @@ for (let name in communeNameCounts) {
 console.log(communeCountArr)
 
 let mostCommonNameCommune = communeCountArr[0]
-for (let  i = 1; i < communeCountArr.length; i++) {
+for (let i = 1; i < communeCountArr.length; i++) {
     if (communeCountArr[i].count > mostCommonNameCommune.count) {
         mostCommonNameCommune = communeCountArr[i];
     }
@@ -20581,8 +20576,49 @@ console.log("Solution 2: The most common commune name is: " + mostCommonNameComm
 // Sort by count descending
 // arr = [ {name: 'An Phú', count: 2}, {name: 'Dĩ An', count: 1} ]
 communeCountArr.sort((a, b) => b.count - a.count)
-console.log(communeCountArr)
 
 // Most common name is arr[0]
 let mostCommonCommuneName = communeCountArr[0]
 console.log("Solution 3: Most common commune name is: " + mostCommonCommuneName.communeName + " with a count of " + mostCommonCommuneName.count)
+
+
+
+let ratio = new Map();
+// lọc các tỉnh, không lấy thành phố
+for (let p = 0; p < provinces.length; p++) {
+    if (provinces[p].type === "Tỉnh") {
+        // Đếm số phường trong tỉnh
+        let wardCount = 0
+        for (let c = 0; c < provinces[p].communes.length; c++){
+            if (provinces[p].communes[c].type === "Phường") {
+                wardCount += 1
+            }
+        }
+        // tính tỉ lệ phường / tổng số xã
+        let wardRatio = wardCount / provinces[p].communes.length
+        // lưu vào map
+        ratio[provinces[p].name] = wardRatio
+    }
+
+}
+console.log(ratio)
+
+// tìm tỉnh có tỷ lệ phường / tổng số xã cao nhất
+let highestWardRatio = 0
+let provinceWithHighestWardRatio = ""
+
+let lowestWardRatio = 1
+let provinceWithLowestWardRatio = ""
+
+for (let provinceName in ratio) {
+    if (ratio[provinceName] > highestWardRatio) {
+        highestWardRatio = ratio[provinceName]
+        provinceWithHighestWardRatio = provinceName
+    }
+    if (ratio[provinceName] < lowestWardRatio) {
+        lowestWardRatio = ratio[provinceName]
+        provinceWithLowestWardRatio = provinceName
+    }
+}
+console.log("The province with the highest ward to commune ratio is: " + provinceWithHighestWardRatio + " with a ratio of " + highestWardRatio)
+console.log("The province with the lowest ward to commune ratio is: " + provinceWithLowestWardRatio + " with a ratio of " + lowestWardRatio)
