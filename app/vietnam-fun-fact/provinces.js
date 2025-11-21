@@ -20622,3 +20622,17 @@ for (let provinceName in ratio) {
 }
 console.log("The province with the highest ward to commune ratio is: " + provinceWithHighestWardRatio + " with a ratio of " + highestWardRatio)
 console.log("The province with the lowest ward to commune ratio is: " + provinceWithLowestWardRatio + " with a ratio of " + lowestWardRatio)
+
+//đặt đếm bằng 0
+let specialZoneCount = 0
+
+//kiểm tra từng tỉnh một, kiểm tra từng xã trong tỉnh xem xã nào có đặc khu
+for (let p = 0; p < provinces.length; p++) {
+    for (let c = 0; c < provinces[p].communes.length; c++) {
+        if (provinces[p].communes[c].type === "Đặc khu") {
+//tính tổng các đặc khu trên cả nước
+            specialZoneCount += 1
+        }
+    }
+}
+console.log("The total number of special zones in Vietnam is: " + specialZoneCount)
