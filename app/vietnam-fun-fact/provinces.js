@@ -20646,3 +20646,56 @@ for (let p = 0; p < provinces.length; p++) {
     vehiclePlateCodesCount += provinces[p].vehiclePlateCodes.length
 }
 console.log("The total number of vehicle plate codes in Vietnam is: " + vehiclePlateCodesCount)
+
+
+let popularWordCounts = new Map()
+// {}
+// {"Di": 1, "An": 2, "Thuan": 1}
+
+//kiem tra tung tinh
+for (let p = 0; p < provinces.length; p++) {
+//kiem tra tung xa
+    for (let c = 0; c < provinces[p].communes.length; c++) {
+//Câu lệnh sau được dùng để tách tên xã thành từng từ:
+        let words = provinces[p].communes[c].name.split(/\s+/)
+        for (let w = 0; w < words.length; w++) {
+            if (words[w] in popularWordCounts) {
+                popularWordCounts[words[w]] += 1
+            } else {
+                popularWordCounts[words[w]] = 1
+            }
+        }
+    }
+}
+
+// Convert to array of objects
+// popularWordCounts = {
+//     word -> "Di":
+//              popularWordCounts[word] -> 1,
+//     word -> "An":
+//              popularWordCounts[word] -> 2,
+//     word -> "Thuan":
+//              popularWordCounts[word] -> 1
+//  }
+// key="Di" value=1
+
+// popularWordCountsArr = [ {word: 'An', count: 2}, {word: 'Phú', count: 1} ]
+let popularWordCountsArr = []
+for (let word in popularWordCounts) {
+    // obj = {word: 'An', count: 2}
+    let obj = {
+        word: word,
+        count: popularWordCounts[word],
+    }
+    // popularWordCountsArr = []
+    // popularWordCountsArr = [ {word: 'An', count: 2} ]
+    // popularWordCountsArr = [ {word: 'An', count: 2}, {word: 'Phú', count: 1}, {word: 'Khac', count: 1} ]
+    popularWordCountsArr.push(obj)
+}
+// Sort by count descending
+popularWordCountsArr.sort((a, b) => b.count - a.count)
+
+console.log("Top 10 popular words in commune names in Vietnam are:")
+for (let i = 0; i < 10; i++) {
+    console.log("\t" + (i + 1) + ": " + popularWordCountsArr[i].word + " (" + popularWordCountsArr[i].count + " times)")
+}
