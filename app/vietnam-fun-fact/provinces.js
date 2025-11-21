@@ -20636,3 +20636,13 @@ for (let p = 0; p < provinces.length; p++) {
     }
 }
 console.log("The total number of special zones in Vietnam is: " + specialZoneCount)
+
+
+//dat bien dem
+let vehiclePlateCodesCount = 0
+//quet cac tinh
+for (let p = 0; p < provinces.length; p++) {
+//cong so dem voi so luong bien so cua tinh do
+    vehiclePlateCodesCount += provinces[p].vehiclePlateCodes.length
+}
+console.log("The total number of vehicle plate codes in Vietnam is: " + vehiclePlateCodesCount)
