@@ -39,9 +39,37 @@ function countCities(provinces) {
 function countCommunes(provinces) {
     let totalCommunes = 0
     for (let i = 0; i < provinces.length; i++) {
-        totalCommunes += provinces[i].communes.length
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            if (provinces[i].communes[j].type === "Xã" ) {
+                totalCommunes += 1;
+            }
+        }
     }
     return totalCommunes
+}
+
+function countWards(provinces) {
+    let totalWards = 0
+    for(let i = 0; i < provinces.length; i++) {
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            if (provinces[i].communes[j].type === "Phường") {
+                totalWards += 1;
+            }
+        }
+    }
+    return totalWards;
+}
+
+function countSpecializedZones(provinces) {
+    let totalSpecializedZones = 0
+    for (let i = 0; i < provinces.length; i++) {
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            if (provinces[i].communes[j].type === "Đặc khu") {
+                totalSpecializedZones += 1;
+            }
+        }
+    }
+    return totalSpecializedZones;
 }
 
 function findBiggestProvinceByArea(provinces) {
@@ -112,9 +140,7 @@ function findProvinceWithLowestDensity(provinces) {
 
 
 function main() {
-    let numberOfProvinces = countProvinces(ProvincesData)
-    let numberOfCommunes = countCommunes(ProvincesData)
-    console.log("Total number of provinces: " + numberOfProvinces + " with " + numberOfCommunes + " communes.")
+
     let biggestProvinceByArea = findBiggestProvinceByArea(ProvincesData)
     console.log("The biggest province is " + biggestProvinceByArea.name + " with area of " + biggestProvinceByArea.areaInKm2 + " km2.")
     let smallestProvinceByArea = findSmallestProvinceByArea(ProvincesData)
@@ -137,6 +163,15 @@ function main() {
 
     let provincesCount = countProvinces(ProvincesData)
     console.log("Total number of provinces: " + provincesCount)
+
+    let communesCount = countCommunes(ProvincesData)
+    console.log("Total number of communes: " + communesCount)
+
+    let wardsCount = countWards(ProvincesData)
+    console.log("Total number of wards: " + wardsCount)
+
+    let specializedZonesCount = countSpecializedZones(ProvincesData)
+    console.log("Total number of specialized zones: " + specializedZonesCount)
 }
 
 main()
