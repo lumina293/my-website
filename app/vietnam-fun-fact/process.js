@@ -138,6 +138,27 @@ function findProvinceWithLowestDensity(provinces) {
     return lowestDensityProvince;
 }
 
+function findTop10PopularCommuneNames(provinces) {
+    let communeNameCounts = new Map()
+    for (let i = 0; i < provinces.length; i++) {
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            let name = provinces[i].communes[j].name
+            if ( name in communeNameCounts) {
+                communeNameCounts[name] += 1
+            } else {
+                communeNameCounts[name] = 1
+            }
+        }
+    }
+
+    let communeNameCountArr = []
+    for (let name in communeNameCounts) {
+        communeNameCountArr.push( { name: name, count: communeNameCounts[name] } )
+    }
+
+    communeNameCountArr.sort( (a, b) => b.count - a.count )
+    return communeNameCountArr.slice(0, 10)
+}
 
 function main() {
 
@@ -172,6 +193,12 @@ function main() {
 
     let specializedZonesCount = countSpecializedZones(ProvincesData)
     console.log("Total number of specialized zones: " + specializedZonesCount)
+
+    let top10PopularCommuneNames = findTop10PopularCommuneNames(ProvincesData)
+    console.log("Top 10 popular commune names:")
+    for (let i = 0; i < top10PopularCommuneNames.length; i++) {
+        console.log( (i + 1) + ". " + top10PopularCommuneNames[i].name + " - " + top10PopularCommuneNames[i].count + " communes")
+    }
 }
 
 main()
