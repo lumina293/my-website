@@ -68,6 +68,32 @@ function findLeastPopulatedProvince(provinces) {
     return p;
 }
 
+function findProvinceWithHighestDensity(provinces) {
+    let highestDensityProvince = provinces[0]
+    let density = provinces[0].population / provinces[0].areaInKm2
+    for (let i = 1; i < provinces.length; i++) {
+        let currentDensity = provinces[i].population / provinces[i].areaInKm2
+        if (currentDensity > density) {
+            highestDensityProvince = provinces[i];
+            density = currentDensity
+        }
+    }
+    return highestDensityProvince;
+}
+
+function findProvinceWithLowestDensity(provinces) {
+    let lowestDensityProvince = provinces[0]
+    let density = provinces[0].population / provinces[0].areaInKm2
+    for (let i = 1; i < provinces.length; i++) {
+        let currentDensity = provinces[i].population / provinces[i].areaInKm2
+        if (currentDensity < density) {
+            lowestDensityProvince = provinces[i];
+            density = currentDensity
+        }
+    }
+    return lowestDensityProvince;
+}
+
 function main() {
     let numberOfProvinces = countProvinces(ProvincesData)
     let numberOfCommunes = countCommunes(ProvincesData)
@@ -82,6 +108,12 @@ function main() {
 
     let leastPopulatedProvince = findLeastPopulatedProvince(ProvincesData)
     console.log("The least population province is " + leastPopulatedProvince.name + " with population of " + leastPopulatedProvince.population + ".")
+
+    let highestDensityProvince = findProvinceWithHighestDensity(ProvincesData)
+    console.log("The highest density province is " + highestDensityProvince.name + " with population of " + highestDensityProvince.population + " and area of " + highestDensityProvince.areaInKm2 + " km2.")
+
+    let lowestDensityProvince = findProvinceWithLowestDensity(ProvincesData)
+    console.log("The lowest density province is " + lowestDensityProvince.name + " with population of " + lowestDensityProvince.population + " and area of " + lowestDensityProvince.areaInKm2 + " km2.")
 }
 
 main()
