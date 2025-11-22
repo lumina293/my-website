@@ -48,6 +48,26 @@ function findSmallestProvinceByArea(provinces) {
     return smallestProvince;
 }
 
+function findMostPopulatedProvince(provinces) {
+    let mostPopulatedProvince = provinces[0]
+    for (let i = 1; i < provinces.length; i++) {
+        if (provinces[i].population > mostPopulatedProvince.population) {
+            mostPopulatedProvince = provinces[i];
+        }
+    }
+    return mostPopulatedProvince;
+}
+
+function findLeastPopulatedProvince(provinces) {
+    let p = provinces[0]
+    for (let i = 1; i < provinces.length; i++) {
+        if (provinces[i].population < p.population) {
+            p = provinces[i];
+        }
+    }
+    return p;
+}
+
 function main() {
     let numberOfProvinces = countProvinces(ProvincesData)
     let numberOfCommunes = countCommunes(ProvincesData)
@@ -56,6 +76,12 @@ function main() {
     console.log("The biggest province is " + biggestProvinceByArea.name + " with area of " + biggestProvinceByArea.areaInKm2 + " km2.")
     let smallestProvinceByArea = findSmallestProvinceByArea(ProvincesData)
     console.log("The smallest province is " + smallestProvinceByArea.name + " with area of " + smallestProvinceByArea.areaInKm2 + " km2.")
+
+    let mostPopulatedProvince = findMostPopulatedProvince(ProvincesData)
+    console.log("The most population province is " + mostPopulatedProvince.name + " with population of " + mostPopulatedProvince.population + ".")
+
+    let leastPopulatedProvince = findLeastPopulatedProvince(ProvincesData)
+    console.log("The least population province is " + leastPopulatedProvince.name + " with population of " + leastPopulatedProvince.population + ".")
 }
 
 main()
