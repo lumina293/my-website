@@ -16,9 +16,25 @@ def do_something(param):
 */
 
 function countProvinces(provinces) {
-    // Do something here
-    return provinces.length
+    let count = 0
+    for (let i= 0; i < provinces.length; i++) {
+        if (provinces[i].type === "Tỉnh") {
+            count += 1
+        }
+    }
+    return count;
 }
+
+function countCities(provinces) {
+    let count = 0
+    for (let i = 0; i < provinces.length; i++) {
+        if (provinces[i].type === "Thành phố") {
+            count += 1
+        }
+    }
+    return count;
+}
+
 
 function countCommunes(provinces) {
     let totalCommunes = 0
@@ -94,6 +110,7 @@ function findProvinceWithLowestDensity(provinces) {
     return lowestDensityProvince;
 }
 
+
 function main() {
     let numberOfProvinces = countProvinces(ProvincesData)
     let numberOfCommunes = countCommunes(ProvincesData)
@@ -114,6 +131,12 @@ function main() {
 
     let lowestDensityProvince = findProvinceWithLowestDensity(ProvincesData)
     console.log("The lowest density province is " + lowestDensityProvince.name + " with population of " + lowestDensityProvince.population + " and area of " + lowestDensityProvince.areaInKm2 + " km2.")
+
+    let citiesCount = countCities(ProvincesData)
+    console.log("Total number of cities: " + citiesCount)
+
+    let provincesCount = countProvinces(ProvincesData)
+    console.log("Total number of provinces: " + provincesCount)
 }
 
 main()
