@@ -55,7 +55,7 @@ export function countSpecializedZones(provinces) {
     return totalSpecializedZones;
 }
 
-function findBiggestProvinceByArea(provinces) {
+export function findBiggestProvinceByArea(provinces) {
     let biggestProvince = provinces[0]
     for (let i = 1; i < provinces.length; i++) {
         if (provinces[i].areaInKm2 > biggestProvince.areaInKm2) {
@@ -65,7 +65,7 @@ function findBiggestProvinceByArea(provinces) {
     return biggestProvince;
 }
 
-function findSmallestProvinceByArea(provinces) {
+export function findSmallestProvinceByArea(provinces) {
     let smallestProvince = provinces[0]
     for (let i = 1; i < provinces.length; i++) {
         if (provinces[i].areaInKm2 < smallestProvince.areaInKm2) {
@@ -75,7 +75,7 @@ function findSmallestProvinceByArea(provinces) {
     return smallestProvince;
 }
 
-function findMostPopulatedProvince(provinces) {
+export function findMostPopulatedProvince(provinces) {
     let mostPopulatedProvince = provinces[0]
     for (let i = 1; i < provinces.length; i++) {
         if (provinces[i].population > mostPopulatedProvince.population) {
@@ -85,7 +85,7 @@ function findMostPopulatedProvince(provinces) {
     return mostPopulatedProvince;
 }
 
-function findLeastPopulatedProvince(provinces) {
+export function findLeastPopulatedProvince(provinces) {
     let p = provinces[0]
     for (let i = 1; i < provinces.length; i++) {
         if (provinces[i].population < p.population) {
@@ -95,7 +95,7 @@ function findLeastPopulatedProvince(provinces) {
     return p;
 }
 
-function findProvinceWithHighestDensity(provinces) {
+export function findProvinceWithHighestDensity(provinces) {
     let highestDensityProvince = provinces[0]
     let density = provinces[0].population / provinces[0].areaInKm2
     for (let i = 1; i < provinces.length; i++) {
@@ -108,7 +108,7 @@ function findProvinceWithHighestDensity(provinces) {
     return highestDensityProvince;
 }
 
-function findProvinceWithLowestDensity(provinces) {
+export function findProvinceWithLowestDensity(provinces) {
     let lowestDensityProvince = provinces[0]
     let density = provinces[0].population / provinces[0].areaInKm2
     for (let i = 1; i < provinces.length; i++) {
@@ -121,7 +121,7 @@ function findProvinceWithLowestDensity(provinces) {
     return lowestDensityProvince;
 }
 
-function findTop10PopularCommuneNames(provinces) {
+export function findTop10PopularCommuneNames(provinces) {
     let communeNameCounts = new Map()
     for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
