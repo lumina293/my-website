@@ -1,21 +1,4 @@
-import ProvincesData from "./data.js"
-
-/*
-JavaScript:
-
-function doSomething(param) {
-    // do something here
-    return result
-}
-
-Python
-
-def do_something(param):
-    # do something here
-    return result
-*/
-
-function countProvinces(provinces) {
+export function countProvinces(provinces) {
     let count = 0
     for (let i= 0; i < provinces.length; i++) {
         if (provinces[i].type === "Tỉnh") {
@@ -25,7 +8,7 @@ function countProvinces(provinces) {
     return count;
 }
 
-function countCities(provinces) {
+export function countCities(provinces) {
     let count = 0
     for (let i = 0; i < provinces.length; i++) {
         if (provinces[i].type === "Thành phố") {
@@ -159,46 +142,3 @@ function findTop10PopularCommuneNames(provinces) {
     communeNameCountArr.sort( (a, b) => b.count - a.count )
     return communeNameCountArr.slice(0, 10)
 }
-
-function main() {
-
-    let biggestProvinceByArea = findBiggestProvinceByArea(ProvincesData)
-    console.log("The biggest province is " + biggestProvinceByArea.name + " with area of " + biggestProvinceByArea.areaInKm2 + " km2.")
-    let smallestProvinceByArea = findSmallestProvinceByArea(ProvincesData)
-    console.log("The smallest province is " + smallestProvinceByArea.name + " with area of " + smallestProvinceByArea.areaInKm2 + " km2.")
-
-    let mostPopulatedProvince = findMostPopulatedProvince(ProvincesData)
-    console.log("The most population province is " + mostPopulatedProvince.name + " with population of " + mostPopulatedProvince.population + ".")
-
-    let leastPopulatedProvince = findLeastPopulatedProvince(ProvincesData)
-    console.log("The least population province is " + leastPopulatedProvince.name + " with population of " + leastPopulatedProvince.population + ".")
-
-    let highestDensityProvince = findProvinceWithHighestDensity(ProvincesData)
-    console.log("The highest density province is " + highestDensityProvince.name + " with population of " + highestDensityProvince.population + " and area of " + highestDensityProvince.areaInKm2 + " km2.")
-
-    let lowestDensityProvince = findProvinceWithLowestDensity(ProvincesData)
-    console.log("The lowest density province is " + lowestDensityProvince.name + " with population of " + lowestDensityProvince.population + " and area of " + lowestDensityProvince.areaInKm2 + " km2.")
-
-    let citiesCount = countCities(ProvincesData)
-    console.log("Total number of cities: " + citiesCount)
-
-    let provincesCount = countProvinces(ProvincesData)
-    console.log("Total number of provinces: " + provincesCount)
-
-    let communesCount = countCommunes(ProvincesData)
-    console.log("Total number of communes: " + communesCount)
-
-    let wardsCount = countWards(ProvincesData)
-    console.log("Total number of wards: " + wardsCount)
-
-    let specializedZonesCount = countSpecializedZones(ProvincesData)
-    console.log("Total number of specialized zones: " + specializedZonesCount)
-
-    let top10PopularCommuneNames = findTop10PopularCommuneNames(ProvincesData)
-    console.log("Top 10 popular commune names:")
-    for (let i = 0; i < top10PopularCommuneNames.length; i++) {
-        console.log( (i + 1) + ". " + top10PopularCommuneNames[i].name + " - " + top10PopularCommuneNames[i].count + " communes")
-    }
-}
-
-main()
