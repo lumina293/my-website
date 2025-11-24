@@ -19,7 +19,7 @@ export function countCities(provinces) {
 }
 
 
-function countCommunes(provinces) {
+export function countCommunes(provinces) {
     let totalCommunes = 0
     for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
@@ -31,7 +31,7 @@ function countCommunes(provinces) {
     return totalCommunes
 }
 
-function countWards(provinces) {
+export function countWards(provinces) {
     let totalWards = 0
     for(let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
@@ -43,7 +43,7 @@ function countWards(provinces) {
     return totalWards;
 }
 
-function countSpecializedZones(provinces) {
+export function countSpecializedZones(provinces) {
     let totalSpecializedZones = 0
     for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
