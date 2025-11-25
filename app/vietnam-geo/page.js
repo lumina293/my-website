@@ -17,7 +17,6 @@ import {
 } from "@/app/vietnam-geo/process";
 
 export default function VietnamGeo() {
-
     return (
         <main>
             <VietnamGeoHeader/>
@@ -121,16 +120,18 @@ function ComparisonCards() {
     };
 
     return (
-        <section>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                Comparisons
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <ComparisonCard {...areaData} />
-                <ComparisonCard {...populationData} />
-                <ComparisonCard {...densityData} />
-            </div>
-        </section>
+        <div className="container mx-auto px-4 py-8">
+            <section>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    Comparisons
+                </h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <ComparisonCard {...areaData} />
+                    <ComparisonCard {...populationData} />
+                    <ComparisonCard {...densityData} />
+                </div>
+            </section>
+        </div>
     );
 }
 
