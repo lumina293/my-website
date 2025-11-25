@@ -12,6 +12,8 @@ import {
     findLeastPopulatedProvince,
     findProvinceWithHighestDensity,
     findProvinceWithLowestDensity,
+    findProvinceWithMostCommunalUnits,
+    findProvinceWithLeastCommunalUnits,
     findTop10PopularCommuneNames
 
 } from "@/app/vietnam-geo/process";
@@ -96,6 +98,7 @@ function ComparisonCards() {
         highest: {name: biggestProvinceByArea.name, value: biggestProvinceByArea.areaInKm2},
         lowest: {name: smallestProvinceByArea.name, value: smallestProvinceByArea.areaInKm2}
     };
+
     let mostPopulatedProvince = findMostPopulatedProvince(Provinces)
     let leastPopulatedProvince = findLeastPopulatedProvince(Provinces)
     const populationData = {
@@ -104,6 +107,7 @@ function ComparisonCards() {
         highest: {name: mostPopulatedProvince.name, value: mostPopulatedProvince.population},
         lowest: {name: leastPopulatedProvince.name, value: leastPopulatedProvince.population}
     };
+
     let highestDensityProvince = findProvinceWithHighestDensity(Provinces)
     let lowestDensityProvince = findProvinceWithLowestDensity(Provinces)
     const densityData = {
@@ -119,16 +123,31 @@ function ComparisonCards() {
         }
     };
 
+    let mostCommunesProvince = findProvinceWithMostCommunalUnits(Provinces)
+    let leastCommunesProvince = findProvinceWithLeastCommunalUnits(Provinces)
+    const communalUnitData = {
+        category: "Communal units",
+        unit: "units",
+        highest: {
+            name: mostCommunesProvince.name,
+            value: mostCommunesProvince.communes.length
+        },
+        lowest: {
+            name: leastCommunesProvince.name,
+            value: leastCommunesProvince.communes.length
+        }
+    };
     return (
         <div className="container mx-auto px-4 py-8">
             <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                     Comparisons
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     <ComparisonCard {...areaData} />
                     <ComparisonCard {...populationData} />
                     <ComparisonCard {...densityData} />
+                    <ComparisonCard {...communalUnitData} />
                 </div>
             </section>
         </div>

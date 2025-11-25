@@ -1,6 +1,6 @@
 export function countProvinces(provinces) {
     let count = 0
-    for (let i= 0; i < provinces.length; i++) {
+    for (let i = 0; i < provinces.length; i++) {
         if (provinces[i].type === "Tỉnh") {
             count += 1
         }
@@ -23,7 +23,7 @@ export function countCommunes(provinces) {
     let totalCommunes = 0
     for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
-            if (provinces[i].communes[j].type === "Xã" ) {
+            if (provinces[i].communes[j].type === "Xã") {
                 totalCommunes += 1;
             }
         }
@@ -33,7 +33,7 @@ export function countCommunes(provinces) {
 
 export function countWards(provinces) {
     let totalWards = 0
-    for(let i = 0; i < provinces.length; i++) {
+    for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
             if (provinces[i].communes[j].type === "Phường") {
                 totalWards += 1;
@@ -121,12 +121,32 @@ export function findProvinceWithLowestDensity(provinces) {
     return lowestDensityProvince;
 }
 
+export function findProvinceWithMostCommunalUnits(provinces) {
+    let provinceWithMostCommunes = provinces[0]
+    for (let i = 0; i < provinces.length; i++) {
+        if (provinces[i].communes.length > provinceWithMostCommunes.communes.length) {
+            provinceWithMostCommunes = provinces[i]
+        }
+    }
+    return provinceWithMostCommunes;
+}
+
+export function findProvinceWithLeastCommunalUnits(provinces) {
+    let provinceWithLeastCommunes = provinces[0]
+    for (let i = 0; i < provinces.length; i++) {
+        if (provinces[i].communes.length < provinceWithLeastCommunes.communes.length) {
+            provinceWithLeastCommunes = provinces[i]
+        }
+    }
+    return provinceWithLeastCommunes;
+}
+
 export function findTop10PopularCommuneNames(provinces) {
     let communeNameCounts = new Map()
     for (let i = 0; i < provinces.length; i++) {
         for (let j = 0; j < provinces[i].communes.length; j++) {
             let name = provinces[i].communes[j].name
-            if ( name in communeNameCounts) {
+            if (name in communeNameCounts) {
                 communeNameCounts[name] += 1
             } else {
                 communeNameCounts[name] = 1
@@ -136,9 +156,9 @@ export function findTop10PopularCommuneNames(provinces) {
 
     let communeNameCountArr = []
     for (let name in communeNameCounts) {
-        communeNameCountArr.push( { name: name, count: communeNameCounts[name] } )
+        communeNameCountArr.push({name: name, count: communeNameCounts[name]})
     }
 
-    communeNameCountArr.sort( (a, b) => b.count - a.count )
+    communeNameCountArr.sort((a, b) => b.count - a.count)
     return communeNameCountArr.slice(0, 10)
 }
