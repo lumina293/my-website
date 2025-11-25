@@ -16,12 +16,6 @@ import {
 } from "@/app/vietnam-geo/process";
 
 export default function VietnamGeo() {
-    let numberOfProvinces = countProvinces(Provinces)
-    let numberOfCities = countCities(Provinces)
-    let numberOfCommunes = countCommunes(Provinces)
-    let numberOfWards = countWards(Provinces)
-    let numberOfSpecializedZones = countSpecializedZones(Provinces)
-    let totalCommunes = numberOfCommunes + numberOfWards + numberOfSpecializedZones
     let biggestProvince = findBiggestProvinceByArea(Provinces)
     let smallestProvince = findSmallestProvinceByArea(Provinces)
     let mostPopulatedProvince = findMostPopulatedProvince(Provinces)
@@ -32,15 +26,8 @@ export default function VietnamGeo() {
     return (
         <div>
             <h1>Địa lý Việt Nam</h1>
-            <p>Việt Nam có tổng số {numberOfProvinces + numberOfCities} tỉnh thành,
-                trong đó có {numberOfCities} thành phố, và {numberOfProvinces} tỉnh.
-            </p>
-            <p>Có tất cả {totalCommunes} đơn vị cấp xã, trong đó có:</p>
-            <ul>
-                <li>{numberOfCommunes} xã</li>
-                <li>{numberOfWards} phường</li>
-                <li>{numberOfSpecializedZones} đặc khu</li>
-            </ul>
+            <ProvinceCount/>
+            <CommuneCount/>
 
             <p>Tỉnh {biggestProvince.name} có diện tích lớn nhất với diện tích: {biggestProvince.areaInKm2}</p>
             <p>Tỉnh {smallestProvince.name} có diện tích nhỏ nhất với diện tích: {smallestProvince.areaInKm2}</p>
@@ -52,6 +39,31 @@ export default function VietnamGeo() {
                 độ: {highestDensityProvince.population / highestDensityProvince.areaInKm2} người/km2</p>
             <p>Tỉnh có mật độ dân số nhỏ nhất: {lowestDensityProvince.name} với mật
                 độ: {lowestDensityProvince.population / lowestDensityProvince.areaInKm2} người/km2</p>
+        </div>
+    )
+}
+
+function ProvinceCount() {
+    let numberOfProvinces = countProvinces(Provinces)
+    let numberOfCities = countCities(Provinces)
+    return <p>Việt Nam có tổng số {numberOfProvinces + numberOfCities} tỉnh thành,
+        trong đó có {numberOfCities} thành phố, và {numberOfProvinces} tỉnh.
+    </p>
+}
+
+function CommuneCount() {
+    let numberOfCommunes = countCommunes(Provinces)
+    let numberOfWards = countWards(Provinces)
+    let numberOfSpecializedZones = countSpecializedZones(Provinces)
+    let totalCommunes = numberOfCommunes + numberOfWards + numberOfSpecializedZones
+    return (
+        <div>
+            <p>Có tất cả {totalCommunes} đơn vị cấp xã, trong đó có:</p>
+            <ul>
+                <li>{numberOfCommunes} xã</li>
+                <li>{numberOfWards} phường</li>
+                <li>{numberOfSpecializedZones} đặc khu</li>
+            </ul>
         </div>
     )
 }
