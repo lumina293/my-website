@@ -1,3 +1,6 @@
+"use client"
+
+import { Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts"
 import VietnamGeoHeader from '@/components/VietnamGeoHeader';
 import Provinces from "@/app/vietnam-geo/data";
 import {
@@ -24,6 +27,7 @@ export default function VietnamGeo() {
             <VietnamGeoHeader/>
             <UnitStatCards/>
             <ComparisonCards/>
+            <TopCommuneMetricsCharts/>
         </main>
     )
 }
@@ -53,6 +57,7 @@ function UnitStatCards() {
             {label: "Specialized zones", value: numberOfSpecializedZones}
         ]
     };
+
 
     return (
         <div className="container mx-auto px-4 py-8">
@@ -194,3 +199,78 @@ function ComparisonCard({category, unit, highest, lowest}) {
     );
 }
 
+function TopCommuneMetricsCharts() {
+    let top10popularCommuneNames = findTop10PopularCommuneNames(Provinces)
+
+    let top10popularWords = [
+        {name: "Tân", count: 890},
+        {name: "Hòa", count: 745},
+        {name: "Phú", count: 623},
+        {name: "Thành", count: 567},
+        {name: "Long", count: 489},
+        {name: "An", count: 456},
+        {name: "Bình", count: 398},
+        {name: "Thạnh", count: 376},
+        {name: "Đông", count: 334},
+        {name: "Mỹ", count: 298}
+    ];
+
+    return (
+        <div className="container mx-auto px-4 py-8">
+            <section>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    Popular Commune Names Analysis
+                </h2>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <BarChartCard
+                        title="Top 10 Popular Commune Names"
+                        data={top10popularCommuneNames}
+                    />
+                    <BarChartCard
+                        title="Top 10 Popular Words in Commune Names"
+                        data={top10popularWords}
+                    />
+                </div>
+            </section>
+        </div>
+    );
+}
+
+function BarChartCard({title, data}) {
+    return (
+        <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-sm font-medium text-gray-600 mb-4">
+                {title}
+            </h3>
+            <div className="h-[350px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={data} margin={{ top: 5, right: 10, left: 10, bottom: 60 }}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb" />
+                        <XAxis
+                            dataKey="name"
+                            tick={{ fill: '#6b7280', fontSize: 11 }}
+                            angle={-45}
+                            textAnchor="end"
+                            height={80}
+                        />
+                        <YAxis tick={{ fill: '#6b7280', fontSize: 11 }} />
+                        <Tooltip
+                            formatter={(value) => value.toLocaleString()}
+                            contentStyle={{
+                                backgroundColor: 'white',
+                                border: '1px solid #e5e7eb',
+                                borderRadius: '6px',
+                                fontSize: '12px'
+                            }}
+                        />
+                        <Bar
+                            dataKey="count"
+                            fill="#3b82f6"
+                            radius={[4, 4, 0, 0]}
+                        />
+                    </BarChart>
+                </ResponsiveContainer>
+            </div>
+        </div>
+    );
+}
