@@ -17,7 +17,8 @@ import {
     findProvinceWithLowestDensity,
     findProvinceWithMostCommunalUnits,
     findProvinceWithLeastCommunalUnits,
-    findTop10PopularCommuneNames
+    findTop10PopularCommuneNames,
+    findTop10PopularWordsInCommuneName
 
 } from "@/app/vietnam-geo/process";
 
@@ -201,19 +202,7 @@ function ComparisonCard({category, unit, highest, lowest}) {
 
 function TopCommuneMetricsCharts() {
     let top10popularCommuneNames = findTop10PopularCommuneNames(Provinces)
-
-    let top10popularWords = [
-        {name: "Tân", count: 890},
-        {name: "Hòa", count: 745},
-        {name: "Phú", count: 623},
-        {name: "Thành", count: 567},
-        {name: "Long", count: 489},
-        {name: "An", count: 456},
-        {name: "Bình", count: 398},
-        {name: "Thạnh", count: 376},
-        {name: "Đông", count: 334},
-        {name: "Mỹ", count: 298}
-    ];
+    let top10popularWords = findTop10PopularWordsInCommuneName(Provinces)
 
     return (
         <div className="container mx-auto px-4 py-8">

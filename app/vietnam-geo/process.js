@@ -162,3 +162,25 @@ export function findTop10PopularCommuneNames(provinces) {
     communeNameCountArr.sort((a, b) => b.count - a.count)
     return communeNameCountArr.slice(0, 10)
 }
+
+export function findTop10PopularWordsInCommuneName(provinces) {
+    let wordCounts = new Map()
+    for (let i = 0; i < provinces.length; i++) {
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            let words = provinces[i].communes[j].name.split(/\s+/)
+            for (let k = 0; k < words.length; k++) {
+                if (words[k] in wordCounts) {
+                    wordCounts[words[k]] += 1
+                } else {
+                    wordCounts[words[k]] = 1
+                }
+            }
+        }
+    }
+    let wordCountsArr = []
+    for (let word in wordCounts) {
+        wordCountsArr.push({name: word, count: wordCounts[word]})
+    }
+    wordCountsArr.sort((a, b) => b.count - a.count)
+    return wordCountsArr.slice(0, 10)
+}
