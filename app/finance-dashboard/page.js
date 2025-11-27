@@ -1,6 +1,17 @@
 "use client"
 
-import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts"
+import {
+    PieChart,
+    Pie,
+    Cell,
+    ResponsiveContainer,
+    Tooltip,
+    Legend,
+    BarChart,
+    CartesianGrid,
+    XAxis,
+    YAxis, Bar
+} from "recharts"
 import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
 
 export default function FinanceDashboard() {
@@ -89,24 +100,14 @@ function DashboardContent() {
                     Summary
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <SummaryCard title="Total Income" value={3000.00} isPositive={true} />
-                    <SummaryCard title="Total Expenses" value={413.54} isPositive={false} />
-                    <SummaryCard title="Net Balance" value={2586.46} isPositive={true} />
+                    <SummaryCard title="Total Income" value={3000.00} isPositive={true}/>
+                    <SummaryCard title="Total Expenses" value={413.54} isPositive={false}/>
+                    <SummaryCard title="Net Balance" value={2586.46} isPositive={true}/>
                 </div>
             </section>
 
             <CategoryBreakdownCharts/>
-
-            <section>
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    Trends
-                </h2>
-                <div className="bg-white rounded-lg shadow p-6">
-                    <div className="h-[300px] flex items-center justify-center text-gray-400">
-                        Chart placeholder - Will add your charts here
-                    </div>
-                </div>
-            </section>
+            <ExpensesByDay/>
         </div>
     );
 }
@@ -195,7 +196,7 @@ function CategoryPieChart({title, data, isIncome}) {
                             labelLine={true}
                         >
                             {data.map((entry, index) => (
-                                <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                                <Cell key={`cell-${index}`} fill={colors[index % colors.length]}/>
                             ))}
                         </Pie>
                         <Tooltip
@@ -213,9 +214,73 @@ function CategoryPieChart({title, data, isIncome}) {
                         <Legend
                             verticalAlign="bottom"
                             height={36}
-                            wrapperStyle={{ fontSize: '12px' }}
+                            wrapperStyle={{fontSize: '12px'}}
                         />
                     </PieChart>
+                </ResponsiveContainer>
+            </div>
+        </div>
+    );
+}
+
+
+function ExpensesByDay() {
+    let mockExpensesByDay = [
+        {date: "01/11/2025", amount: 100},
+        {date: "02/11/2025", amount: 80},
+        {date: "03/11/2025", amount: 70},
+        {date: "04/11/2025", amount: 120},
+        {date: "05/11/2025", amount: 110},
+    ]
+
+    return (
+        <div className="container mx-auto px-4 py-8">
+            <section>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                    Expenses by day
+                </h2>
+                <BarChartCard
+                    title="How much I spend each day"
+                    data={mockExpensesByDay}
+                />
+            </section>
+        </div>
+    );
+}
+
+function BarChartCard({title, data}) {
+    return (
+        <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-sm font-medium text-gray-600 mb-4">
+                {title}
+            </h3>
+            <div className="h-[350px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                    <BarChart data={data} margin={{top: 5, right: 10, left: 10, bottom: 5}}>
+                        <CartesianGrid strokeDasharray="3 3" stroke="#e5e7eb"/>
+                        <XAxis
+                            dataKey="date"
+                            tick={{fill: '#6b7280', fontSize: 11}}
+                            angle={-45}
+                            textAnchor="end"
+                            height={80}
+                        />
+                        <YAxis tick={{fill: '#6b7280', fontSize: 11}}/>
+                        <Tooltip
+                            formatter={(value) => value.toLocaleString()}
+                            contentStyle={{
+                                backgroundColor: 'white',
+                                border: '1px solid #e5e7eb',
+                                borderRadius: '6px',
+                                fontSize: '12px'
+                            }}
+                        />
+                        <Bar
+                            dataKey="amount"
+                            fill="#3b82f6"
+                            radius={[4, 4, 0, 0]}
+                        />
+                    </BarChart>
                 </ResponsiveContainer>
             </div>
         </div>
