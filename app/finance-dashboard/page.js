@@ -1,4 +1,6 @@
-// file: app/finance-dashboard/page.js
+"use client"
+
+import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend } from "recharts"
 import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
 
 export default function FinanceDashboard() {
@@ -93,17 +95,7 @@ function DashboardContent() {
                 </div>
             </section>
 
-            {/* Placeholder for Charts */}
-            <section>
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    Spending by Category
-                </h2>
-                <div className="bg-white rounded-lg shadow p-6">
-                    <div className="h-[300px] flex items-center justify-center text-gray-400">
-                        Chart placeholder - Will add your charts here
-                    </div>
-                </div>
-            </section>
+            <CategoryBreakdownCharts/>
 
             <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
@@ -131,6 +123,101 @@ function SummaryCard({title, value, isPositive}) {
                 maximumFractionDigits: 2
             })}
             </p>
+        </div>
+    );
+}
+
+function CategoryBreakdownCharts() {
+    // Mock income data by category
+    let incomeByCategory = [
+        {category: "Salary", amount: 3000.00},
+        {category: "Freelance", amount: 500.00},
+        {category: "Investment", amount: 150.00},
+        {category: "Other", amount: 50.00}
+    ];
+
+    // Mock expense data by category
+    let expenseByCategory = [
+        {category: "Groceries", amount: 107.80},
+        {category: "Bills", amount: 150.00},
+        {category: "Shopping", amount: 89.99},
+        {category: "Dining", amount: 28.75},
+        {category: "Entertainment", amount: 25.00},
+        {category: "Transport", amount: 12.00}
+    ];
+
+    return (
+        <section>
+            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                Category Breakdown
+            </h2>
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                <CategoryPieChart
+                    title="Income by Category"
+                    data={incomeByCategory}
+                    isIncome={true}
+                />
+                <CategoryPieChart
+                    title="Expense by Category"
+                    data={expenseByCategory}
+                    isIncome={false}
+                />
+            </div>
+        </section>
+    );
+}
+
+function CategoryPieChart({title, data, isIncome}) {
+    // Color palettes
+    const incomeColors = ['#10b981', '#3b82f6', '#8b5cf6', '#6366f1'];
+    const expenseColors = ['#ef4444', '#f59e0b', '#ec4899', '#f97316', '#eab308', '#14b8a6'];
+    const colors = isIncome ? incomeColors : expenseColors;
+
+    // Calculate total
+    let total = data.reduce((sum, item) => sum + item.amount, 0);
+
+    return (
+        <div className="bg-white rounded-lg shadow p-6">
+            <h3 className="text-sm font-medium text-gray-600 mb-4">
+                {title}
+            </h3>
+            <div className="h-[300px] w-full">
+                <ResponsiveContainer width="100%" height="100%">
+                    <PieChart>
+                        <Pie
+                            data={data}
+                            dataKey="amount"
+                            nameKey="category"
+                            cx="50%"
+                            cy="50%"
+                            outerRadius={80}
+                            label={(entry) => `${entry.category} (${((entry.amount / total) * 100).toFixed(1)}%)`}
+                            labelLine={true}
+                        >
+                            {data.map((entry, index) => (
+                                <Cell key={`cell-${index}`} fill={colors[index % colors.length]} />
+                            ))}
+                        </Pie>
+                        <Tooltip
+                            formatter={(value) => `$${value.toLocaleString('en-US', {
+                                minimumFractionDigits: 2,
+                                maximumFractionDigits: 2
+                            })}`}
+                            contentStyle={{
+                                backgroundColor: 'white',
+                                border: '1px solid #e5e7eb',
+                                borderRadius: '6px',
+                                fontSize: '12px'
+                            }}
+                        />
+                        <Legend
+                            verticalAlign="bottom"
+                            height={36}
+                            wrapperStyle={{ fontSize: '12px' }}
+                        />
+                    </PieChart>
+                </ResponsiveContainer>
+            </div>
         </div>
     );
 }
