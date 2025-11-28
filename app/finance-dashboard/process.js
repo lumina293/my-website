@@ -18,3 +18,32 @@ export function calculateTotalExpense(transactions) {
     return totalExpense
 }
 
+/**
+ * calculateIncomeByCategory calculates the total income by category
+ * and return an array like below:
+ *      [
+ *         {category: "Salary", amount: 3000.00},
+ *         {category: "Freelance", amount: 500.00},
+ *         {category: "Investment", amount: 150.00},
+ *         {category: "Other", amount: 50.00}
+ *     ]
+ */
+export function calculateIncomeByCategory(transactions) {
+    let incomeByCategory = new Map()
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].amount > 0) {
+            if (!(transactions[i].category in incomeByCategory)) {
+                incomeByCategory[transactions[i].category] = 0
+            }
+            incomeByCategory[transactions[i].category] += transactions[i].amount
+        }
+    }
+
+    let incomeByCategoryArr = []
+    for (let category in incomeByCategory) {
+        incomeByCategoryArr.push({category: category, amount: incomeByCategory[category]})
+    }
+    return incomeByCategoryArr
+}
+
+
