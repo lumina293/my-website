@@ -1,0 +1,1043 @@
+date,category,description,amount
+2025-05-29,Health,Pharmacy,-135701
+2025-05-29,Utilities,Water bill,-1542433
+2025-05-29,Utilities,Electricity bill,-885158
+2025-05-29,Interest,Bank interest,1407509
+2025-05-29,Entertainment,Concert,-279099
+2025-05-29,Shopping,Electronics,-2698013
+2025-05-29,Transport,Gas,-149415
+2025-05-29,Utilities,Electricity bill,-469723
+2025-05-29,Salary,Monthly salary,21703621
+2025-05-29,Entertainment,Movie,-488442
+2025-05-30,Salary,Monthly salary,26592854
+2025-05-30,Utilities,Electricity bill,-1642553
+2025-05-30,Transport,Gas,-473888
+2025-05-30,Transport,Taxi,-177179
+2025-05-30,Shopping,Electronics,-1770788
+2025-05-30,Loan Payment,Loan repayment,-8984626
+2025-05-31,Eating Out,Cafe,-414311
+2025-05-31,Groceries,Vegetable market,-1039499
+2025-05-31,Transport,Public transport,-156975
+2025-05-31,Gift,Birthday gift,698545
+2025-05-31,Transport,Public transport,-359453
+2025-05-31,Rent,Apartment rent,-12432230
+2025-06-01,Rent,Apartment rent,-10937346
+2025-06-02,Utilities,Internet,-228782
+2025-06-02,Transport,Taxi,-295127
+2025-06-02,Loan Payment,Loan repayment,-7286665
+2025-06-02,Eating Out,Restaurant,-652787
+2025-06-02,Misc,Miscellaneous,-471948
+2025-06-02,Health,Pharmacy,-912645
+2025-06-02,Transport,Taxi,-253694
+2025-06-03,Loan Payment,Loan repayment,-1370090
+2025-06-03,Rent,Apartment rent,-3644868
+2025-06-03,Health,Pharmacy,-577373
+2025-06-04,Groceries,Supermarket,-1234990
+2025-06-04,Loan Payment,Loan repayment,-5721570
+2025-06-04,Health,Doctor appointment,-1970200
+2025-06-04,Misc,Miscellaneous,-341169
+2025-06-04,Rent,Apartment rent,-4705412
+2025-06-04,Interest,Bank interest,983271
+2025-06-04,Eating Out,Restaurant,-392317
+2025-06-04,Loan Payment,Loan repayment,-8176082
+2025-06-04,Groceries,Vegetable market,-902605
+2025-06-05,Entertainment,Streaming,-205305
+2025-06-05,Health,Doctor appointment,-1395180
+2025-06-05,Eating Out,Street food,-85835
+2025-06-06,Misc,Miscellaneous,-320925
+2025-06-06,Shopping,Home items,-2383889
+2025-06-06,Entertainment,Concert,-698855
+2025-06-06,Entertainment,Streaming,-456224
+2025-06-07,Eating Out,Street food,-713686
+2025-06-07,Misc,Miscellaneous,-299300
+2025-06-07,Misc,Miscellaneous,-415101
+2025-06-07,Health,Pharmacy,-908678
+2025-06-07,Health,Pharmacy,-906255
+2025-06-07,Entertainment,Streaming,-194414
+2025-06-07,Loan Payment,Loan repayment,-9269310
+2025-06-07,Utilities,Water bill,-1133537
+2025-06-07,Rent,Apartment rent,-3936109
+2025-06-07,Rent,Apartment rent,-13229603
+2025-06-08,Shopping,Electronics,-4975503
+2025-06-08,Shopping,Home items,-983792
+2025-06-08,Rent,Apartment rent,-6746765
+2025-06-08,Entertainment,Streaming,-783829
+2025-06-08,Loan Payment,Loan repayment,-7007858
+2025-06-08,Salary,Monthly salary,11847542
+2025-06-08,Loan Payment,Loan repayment,-8755449
+2025-06-09,Rent,Apartment rent,-5335828
+2025-06-09,Eating Out,Cafe,-618738
+2025-06-09,Rent,Apartment rent,-7185619
+2025-06-09,Misc,Miscellaneous,-145805
+2025-06-09,Misc,Miscellaneous,-369923
+2025-06-09,Eating Out,Street food,-224519
+2025-06-09,Health,Doctor appointment,-926874
+2025-06-09,Salary,Monthly salary,38733784
+2025-06-09,Misc,Miscellaneous,-101405
+2025-06-09,Freelance,Project payment,14528315
+2025-06-10,Rent,Apartment rent,-10678735
+2025-06-10,Groceries,Supermarket,-1348792
+2025-06-10,Health,Doctor appointment,-652828
+2025-06-10,Health,Doctor appointment,-551403
+2025-06-10,Shopping,Clothes,-127078
+2025-06-10,Transport,Gas,-78543
+2025-06-10,Shopping,Clothes,-4479170
+2025-06-11,Shopping,Electronics,-1671445
+2025-06-12,Misc,Miscellaneous,-357794
+2025-06-12,Rent,Apartment rent,-3409348
+2025-06-12,Loan Payment,Loan repayment,-2584319
+2025-06-12,Transport,Taxi,-351267
+2025-06-12,Gift,Birthday gift,2838015
+2025-06-13,Health,Pharmacy,-1546341
+2025-06-13,Eating Out,Street food,-413571
+2025-06-13,Utilities,Internet,-504726
+2025-06-13,Shopping,Electronics,-1046720
+2025-06-13,Utilities,Water bill,-575425
+2025-06-13,Interest,Bank interest,350583
+2025-06-13,Rent,Apartment rent,-12470990
+2025-06-13,Misc,Miscellaneous,-482181
+2025-06-14,Misc,Miscellaneous,-421384
+2025-06-14,Freelance,Client payment,2243132
+2025-06-14,Gift,Gift from family,2744949
+2025-06-14,Rent,Apartment rent,-13562020
+2025-06-14,Misc,Miscellaneous,-191620
+2025-06-14,Eating Out,Cafe,-746448
+2025-06-15,Entertainment,Movie,-290285
+2025-06-15,Utilities,Internet,-691521
+2025-06-15,Entertainment,Concert,-742759
+2025-06-15,Groceries,Supermarket,-1136586
+2025-06-15,Utilities,Water bill,-1713930
+2025-06-15,Eating Out,Street food,-406231
+2025-06-15,Rent,Apartment rent,-4631447
+2025-06-15,Rent,Apartment rent,-8827217
+2025-06-15,Freelance,Client payment,5059842
+2025-06-16,Health,Pharmacy,-1432082
+2025-06-16,Groceries,Supermarket,-777440
+2025-06-17,Transport,Public transport,-74172
+2025-06-17,Entertainment,Concert,-545311
+2025-06-17,Utilities,Electricity bill,-220959
+2025-06-17,Loan Payment,Loan repayment,-7024684
+2025-06-17,Eating Out,Cafe,-188619
+2025-06-17,Rent,Apartment rent,-2747320
+2025-06-17,Entertainment,Streaming,-255372
+2025-06-17,Transport,Public transport,-312520
+2025-06-17,Eating Out,Restaurant,-106631
+2025-06-17,Groceries,Supermarket,-922792
+2025-06-18,Rent,Apartment rent,-14070340
+2025-06-18,Transport,Gas,-186416
+2025-06-18,Entertainment,Streaming,-218113
+2025-06-18,Salary,Monthly salary,16444467
+2025-06-18,Rent,Apartment rent,-5344906
+2025-06-18,Entertainment,Streaming,-660469
+2025-06-19,Misc,Miscellaneous,-193492
+2025-06-19,Freelance,Project payment,10023690
+2025-06-19,Salary,Monthly salary,24129381
+2025-06-19,Misc,Miscellaneous,-171952
+2025-06-19,Entertainment,Streaming,-211540
+2025-06-19,Health,Doctor appointment,-1451824
+2025-06-19,Rent,Apartment rent,-13105781
+2025-06-19,Shopping,Electronics,-1269914
+2025-06-19,Utilities,Internet,-777034
+2025-06-19,Misc,Miscellaneous,-197881
+2025-06-20,Rent,Apartment rent,-7248393
+2025-06-21,Misc,Miscellaneous,-383025
+2025-06-21,Eating Out,Street food,-323944
+2025-06-21,Groceries,Vegetable market,-1256807
+2025-06-21,Entertainment,Movie,-309545
+2025-06-21,Rent,Apartment rent,-11277179
+2025-06-21,Rent,Apartment rent,-7615810
+2025-06-21,Entertainment,Concert,-26530
+2025-06-22,Misc,Miscellaneous,-454620
+2025-06-23,Loan Payment,Loan repayment,-6777698
+2025-06-23,Health,Doctor appointment,-185507
+2025-06-23,Entertainment,Concert,-260941
+2025-06-23,Eating Out,Cafe,-543226
+2025-06-23,Shopping,Clothes,-101898
+2025-06-24,Misc,Miscellaneous,-492227
+2025-06-24,Groceries,Vegetable market,-1412337
+2025-06-24,Misc,Miscellaneous,-178915
+2025-06-24,Loan Payment,Loan repayment,-1893690
+2025-06-24,Entertainment,Streaming,-992637
+2025-06-25,Shopping,Clothes,-3671499
+2025-06-25,Health,Pharmacy,-218520
+2025-06-25,Groceries,Supermarket,-803215
+2025-06-26,Utilities,Internet,-843935
+2025-06-26,Groceries,Supermarket,-1233144
+2025-06-26,Transport,Public transport,-40883
+2025-06-26,Misc,Miscellaneous,-17292
+2025-06-26,Eating Out,Restaurant,-255442
+2025-06-26,Health,Pharmacy,-1391828
+2025-06-26,Misc,Miscellaneous,-214184
+2025-06-27,Shopping,Home items,-3384596
+2025-06-28,Utilities,Water bill,-857064
+2025-06-28,Loan Payment,Loan repayment,-6509162
+2025-06-28,Utilities,Electricity bill,-1499161
+2025-06-28,Eating Out,Cafe,-731454
+2025-06-28,Gift,Birthday gift,272671
+2025-06-29,Misc,Miscellaneous,-173413
+2025-06-29,Utilities,Electricity bill,-836376
+2025-06-29,Shopping,Electronics,-4605797
+2025-06-29,Transport,Gas,-438296
+2025-06-30,Salary,Monthly salary,11676849
+2025-06-30,Shopping,Clothes,-1774370
+2025-06-30,Groceries,Vegetable market,-357395
+2025-06-30,Shopping,Electronics,-478426
+2025-06-30,Utilities,Internet,-485194
+2025-06-30,Loan Payment,Loan repayment,-4742541
+2025-06-30,Entertainment,Concert,-570944
+2025-06-30,Loan Payment,Loan repayment,-517001
+2025-06-30,Freelance,Project payment,6939754
+2025-06-30,Rent,Apartment rent,-3945010
+2025-07-01,Salary,Monthly salary,16841711
+2025-07-01,Misc,Miscellaneous,-134037
+2025-07-01,Entertainment,Concert,-426498
+2025-07-01,Shopping,Clothes,-3193395
+2025-07-01,Eating Out,Street food,-188221
+2025-07-01,Loan Payment,Loan repayment,-1960991
+2025-07-01,Transport,Taxi,-100099
+2025-07-01,Gift,Gift from family,908332
+2025-07-02,Transport,Gas,-321848
+2025-07-02,Misc,Miscellaneous,-338764
+2025-07-02,Rent,Apartment rent,-6948534
+2025-07-02,Health,Pharmacy,-1275196
+2025-07-02,Interest,Bank interest,1692112
+2025-07-02,Entertainment,Streaming,-653157
+2025-07-02,Rent,Apartment rent,-14028767
+2025-07-02,Health,Pharmacy,-1181413
+2025-07-03,Interest,Bank interest,259255
+2025-07-04,Rent,Apartment rent,-8579578
+2025-07-04,Loan Payment,Loan repayment,-4035482
+2025-07-04,Transport,Public transport,-427102
+2025-07-05,Misc,Miscellaneous,-359919
+2025-07-05,Misc,Miscellaneous,-305714
+2025-07-05,Health,Pharmacy,-1133758
+2025-07-05,Groceries,Vegetable market,-838701
+2025-07-05,Misc,Miscellaneous,-116035
+2025-07-05,Groceries,Supermarket,-886917
+2025-07-05,Groceries,Supermarket,-438184
+2025-07-05,Health,Doctor appointment,-1978141
+2025-07-06,Misc,Miscellaneous,-471307
+2025-07-07,Interest,Bank interest,1783069
+2025-07-07,Health,Doctor appointment,-862470
+2025-07-07,Eating Out,Street food,-44979
+2025-07-07,Salary,Monthly salary,22752597
+2025-07-07,Loan Payment,Loan repayment,-4803829
+2025-07-08,Transport,Gas,-204660
+2025-07-08,Rent,Apartment rent,-6627151
+2025-07-09,Loan Payment,Loan repayment,-813769
+2025-07-09,Rent,Apartment rent,-3690359
+2025-07-09,Rent,Apartment rent,-7930589
+2025-07-09,Groceries,Supermarket,-738763
+2025-07-09,Rent,Apartment rent,-7356959
+2025-07-09,Rent,Apartment rent,-5182305
+2025-07-09,Rent,Apartment rent,-7262650
+2025-07-09,Transport,Public transport,-300834
+2025-07-09,Eating Out,Cafe,-670317
+2025-07-10,Eating Out,Cafe,-97729
+2025-07-10,Shopping,Electronics,-1385035
+2025-07-11,Groceries,Supermarket,-1267490
+2025-07-11,Transport,Public transport,-285245
+2025-07-11,Health,Doctor appointment,-917363
+2025-07-11,Entertainment,Concert,-112017
+2025-07-12,Rent,Apartment rent,-13749611
+2025-07-12,Salary,Monthly salary,11890581
+2025-07-12,Shopping,Home items,-1867997
+2025-07-12,Utilities,Internet,-767509
+2025-07-13,Health,Doctor appointment,-1845043
+2025-07-13,Eating Out,Street food,-261099
+2025-07-13,Entertainment,Streaming,-214250
+2025-07-13,Rent,Apartment rent,-14242104
+2025-07-13,Entertainment,Concert,-773523
+2025-07-13,Transport,Taxi,-312248
+2025-07-14,Groceries,Supermarket,-575089
+2025-07-14,Utilities,Electricity bill,-561591
+2025-07-14,Health,Doctor appointment,-1285514
+2025-07-14,Entertainment,Streaming,-655598
+2025-07-15,Entertainment,Movie,-532568
+2025-07-15,Rent,Apartment rent,-8824327
+2025-07-15,Groceries,Supermarket,-516852
+2025-07-15,Utilities,Electricity bill,-1182501
+2025-07-15,Eating Out,Street food,-43844
+2025-07-16,Eating Out,Cafe,-428802
+2025-07-16,Entertainment,Concert,-68057
+2025-07-16,Transport,Taxi,-447301
+2025-07-16,Rent,Apartment rent,-2167594
+2025-07-16,Misc,Miscellaneous,-371574
+2025-07-16,Entertainment,Streaming,-932295
+2025-07-17,Loan Payment,Loan repayment,-6796014
+2025-07-17,Utilities,Water bill,-1520855
+2025-07-17,Health,Doctor appointment,-1555103
+2025-07-18,Transport,Public transport,-142005
+2025-07-18,Groceries,Vegetable market,-893109
+2025-07-18,Loan Payment,Loan repayment,-2353549
+2025-07-18,Loan Payment,Loan repayment,-550313
+2025-07-18,Interest,Bank interest,936115
+2025-07-18,Salary,Monthly salary,39656251
+2025-07-18,Entertainment,Concert,-191502
+2025-07-18,Shopping,Electronics,-744173
+2025-07-18,Transport,Taxi,-69974
+2025-07-18,Misc,Miscellaneous,-398651
+2025-07-19,Eating Out,Restaurant,-607116
+2025-07-19,Misc,Miscellaneous,-462798
+2025-07-19,Interest,Bank interest,1342193
+2025-07-19,Eating Out,Restaurant,-561602
+2025-07-19,Shopping,Electronics,-908928
+2025-07-19,Utilities,Electricity bill,-1382608
+2025-07-19,Transport,Gas,-316181
+2025-07-19,Transport,Taxi,-404841
+2025-07-20,Shopping,Electronics,-3370673
+2025-07-20,Health,Doctor appointment,-664677
+2025-07-20,Eating Out,Restaurant,-500101
+2025-07-20,Transport,Taxi,-352266
+2025-07-20,Groceries,Vegetable market,-1003052
+2025-07-20,Transport,Public transport,-29496
+2025-07-20,Rent,Apartment rent,-2816871
+2025-07-20,Transport,Public transport,-249721
+2025-07-20,Entertainment,Streaming,-772207
+2025-07-21,Rent,Apartment rent,-14379639
+2025-07-21,Misc,Miscellaneous,-442431
+2025-07-21,Shopping,Home items,-2404036
+2025-07-21,Rent,Apartment rent,-7821526
+2025-07-21,Entertainment,Concert,-925510
+2025-07-22,Salary,Monthly salary,18687412
+2025-07-22,Health,Doctor appointment,-1206382
+2025-07-22,Utilities,Electricity bill,-1261148
+2025-07-22,Entertainment,Concert,-47301
+2025-07-22,Health,Pharmacy,-1829365
+2025-07-22,Transport,Public transport,-168949
+2025-07-23,Utilities,Water bill,-1038266
+2025-07-23,Interest,Bank interest,917987
+2025-07-23,Health,Pharmacy,-1577861
+2025-07-23,Loan Payment,Loan repayment,-778459
+2025-07-23,Health,Doctor appointment,-1286810
+2025-07-23,Salary,Monthly salary,23782964
+2025-07-23,Groceries,Supermarket,-386266
+2025-07-23,Loan Payment,Loan repayment,-2097298
+2025-07-23,Loan Payment,Loan repayment,-8750952
+2025-07-23,Shopping,Clothes,-3250910
+2025-07-24,Rent,Apartment rent,-6999460
+2025-07-24,Shopping,Clothes,-4959931
+2025-07-24,Misc,Miscellaneous,-339896
+2025-07-24,Loan Payment,Loan repayment,-6714073
+2025-07-24,Entertainment,Concert,-691486
+2025-07-24,Loan Payment,Loan repayment,-5046635
+2025-07-25,Salary,Monthly salary,26817640
+2025-07-25,Salary,Monthly salary,21277494
+2025-07-26,Shopping,Home items,-3229885
+2025-07-26,Entertainment,Concert,-452818
+2025-07-26,Rent,Apartment rent,-12181023
+2025-07-26,Gift,Birthday gift,2584914
+2025-07-26,Rent,Apartment rent,-5363120
+2025-07-26,Eating Out,Street food,-84068
+2025-07-26,Rent,Apartment rent,-11502834
+2025-07-26,Rent,Apartment rent,-2896767
+2025-07-26,Rent,Apartment rent,-6322785
+2025-07-26,Loan Payment,Loan repayment,-8351782
+2025-07-27,Health,Doctor appointment,-59358
+2025-07-27,Eating Out,Cafe,-57531
+2025-07-27,Groceries,Vegetable market,-652001
+2025-07-27,Gift,Birthday gift,2239536
+2025-07-27,Shopping,Clothes,-4101293
+2025-07-27,Entertainment,Concert,-137814
+2025-07-27,Misc,Miscellaneous,-108269
+2025-07-28,Transport,Gas,-391948
+2025-07-28,Misc,Miscellaneous,-297887
+2025-07-28,Rent,Apartment rent,-9756374
+2025-07-28,Transport,Taxi,-373191
+2025-07-28,Rent,Apartment rent,-11342581
+2025-07-28,Loan Payment,Loan repayment,-1456204
+2025-07-29,Shopping,Electronics,-4961473
+2025-07-29,Entertainment,Concert,-806940
+2025-07-30,Groceries,Vegetable market,-734904
+2025-07-30,Shopping,Electronics,-121478
+2025-07-30,Health,Pharmacy,-1275438
+2025-07-30,Utilities,Water bill,-420921
+2025-07-30,Groceries,Vegetable market,-461465
+2025-07-30,Loan Payment,Loan repayment,-1054815
+2025-07-30,Salary,Monthly salary,17281254
+2025-07-30,Loan Payment,Loan repayment,-1809304
+2025-07-30,Freelance,Project payment,14711847
+2025-07-30,Entertainment,Streaming,-65501
+2025-07-31,Loan Payment,Loan repayment,-4038057
+2025-07-31,Loan Payment,Loan repayment,-8290323
+2025-07-31,Rent,Apartment rent,-4953877
+2025-07-31,Entertainment,Movie,-911965
+2025-07-31,Misc,Miscellaneous,-295102
+2025-07-31,Gift,Gift from family,210932
+2025-07-31,Misc,Miscellaneous,-254695
+2025-08-01,Groceries,Supermarket,-610982
+2025-08-01,Transport,Public transport,-196212
+2025-08-01,Misc,Miscellaneous,-97179
+2025-08-01,Salary,Monthly salary,25811574
+2025-08-01,Interest,Bank interest,851786
+2025-08-02,Utilities,Electricity bill,-1318221
+2025-08-02,Utilities,Electricity bill,-373202
+2025-08-02,Utilities,Water bill,-1634426
+2025-08-02,Utilities,Water bill,-248037
+2025-08-02,Health,Doctor appointment,-386751
+2025-08-02,Eating Out,Cafe,-614803
+2025-08-02,Groceries,Vegetable market,-1358749
+2025-08-02,Shopping,Clothes,-4510652
+2025-08-02,Entertainment,Movie,-266562
+2025-08-02,Shopping,Electronics,-2015272
+2025-08-03,Eating Out,Restaurant,-244938
+2025-08-03,Misc,Miscellaneous,-36879
+2025-08-04,Eating Out,Street food,-530326
+2025-08-05,Interest,Bank interest,1638787
+2025-08-05,Misc,Miscellaneous,-15733
+2025-08-05,Eating Out,Restaurant,-706682
+2025-08-05,Groceries,Supermarket,-1245431
+2025-08-05,Groceries,Supermarket,-752121
+2025-08-05,Entertainment,Movie,-351469
+2025-08-05,Health,Doctor appointment,-1991917
+2025-08-06,Health,Pharmacy,-1843780
+2025-08-06,Shopping,Clothes,-3155664
+2025-08-06,Utilities,Internet,-1889110
+2025-08-06,Shopping,Clothes,-2241330
+2025-08-06,Eating Out,Cafe,-785928
+2025-08-06,Eating Out,Restaurant,-613332
+2025-08-06,Groceries,Supermarket,-94545
+2025-08-06,Utilities,Water bill,-1389456
+2025-08-07,Groceries,Vegetable market,-1029385
+2025-08-07,Transport,Public transport,-449726
+2025-08-07,Shopping,Clothes,-2410223
+2025-08-07,Gift,Gift from family,1062282
+2025-08-07,Loan Payment,Loan repayment,-1342043
+2025-08-07,Utilities,Internet,-1905079
+2025-08-08,Rent,Apartment rent,-5268750
+2025-08-08,Health,Pharmacy,-893338
+2025-08-08,Freelance,Project payment,1436849
+2025-08-08,Utilities,Internet,-698872
+2025-08-08,Rent,Apartment rent,-4787167
+2025-08-08,Freelance,Client payment,13540847
+2025-08-09,Misc,Miscellaneous,-385462
+2025-08-09,Loan Payment,Loan repayment,-7987011
+2025-08-09,Eating Out,Restaurant,-645490
+2025-08-09,Shopping,Home items,-4679593
+2025-08-09,Eating Out,Street food,-221881
+2025-08-09,Salary,Monthly salary,11001542
+2025-08-10,Entertainment,Movie,-591937
+2025-08-10,Rent,Apartment rent,-7928694
+2025-08-10,Misc,Miscellaneous,-217102
+2025-08-10,Entertainment,Concert,-49703
+2025-08-11,Groceries,Supermarket,-1212151
+2025-08-11,Misc,Miscellaneous,-203615
+2025-08-12,Rent,Apartment rent,-7326501
+2025-08-12,Shopping,Electronics,-4147958
+2025-08-12,Utilities,Electricity bill,-795411
+2025-08-12,Loan Payment,Loan repayment,-3975547
+2025-08-12,Shopping,Electronics,-2020181
+2025-08-12,Eating Out,Cafe,-551644
+2025-08-12,Shopping,Clothes,-1150754
+2025-08-12,Shopping,Electronics,-4445404
+2025-08-12,Loan Payment,Loan repayment,-4804661
+2025-08-12,Utilities,Internet,-748718
+2025-08-13,Gift,Birthday gift,2336072
+2025-08-13,Misc,Miscellaneous,-90624
+2025-08-13,Rent,Apartment rent,-10084742
+2025-08-14,Health,Doctor appointment,-752962
+2025-08-14,Rent,Apartment rent,-13459129
+2025-08-15,Health,Doctor appointment,-1129698
+2025-08-15,Misc,Miscellaneous,-117119
+2025-08-15,Eating Out,Cafe,-485455
+2025-08-15,Entertainment,Concert,-320183
+2025-08-15,Shopping,Home items,-3620006
+2025-08-15,Freelance,Client payment,5170505
+2025-08-16,Loan Payment,Loan repayment,-3792487
+2025-08-16,Entertainment,Movie,-294475
+2025-08-16,Groceries,Vegetable market,-1392750
+2025-08-16,Eating Out,Cafe,-296463
+2025-08-16,Entertainment,Movie,-484946
+2025-08-16,Utilities,Electricity bill,-984351
+2025-08-16,Eating Out,Restaurant,-401891
+2025-08-16,Entertainment,Movie,-686313
+2025-08-16,Transport,Taxi,-108355
+2025-08-17,Freelance,Client payment,3700193
+2025-08-17,Shopping,Electronics,-2375640
+2025-08-17,Gift,Birthday gift,1446152
+2025-08-18,Loan Payment,Loan repayment,-9400498
+2025-08-18,Eating Out,Restaurant,-146447
+2025-08-18,Utilities,Water bill,-1954418
+2025-08-18,Shopping,Electronics,-2449507
+2025-08-18,Misc,Miscellaneous,-414128
+2025-08-18,Salary,Monthly salary,34148456
+2025-08-18,Health,Doctor appointment,-1873575
+2025-08-19,Rent,Apartment rent,-3229607
+2025-08-19,Rent,Apartment rent,-5171093
+2025-08-19,Groceries,Supermarket,-1174318
+2025-08-19,Health,Doctor appointment,-453038
+2025-08-19,Loan Payment,Loan repayment,-4658685
+2025-08-19,Transport,Public transport,-281792
+2025-08-19,Groceries,Vegetable market,-648364
+2025-08-20,Rent,Apartment rent,-14793715
+2025-08-20,Misc,Miscellaneous,-307498
+2025-08-20,Health,Pharmacy,-1027238
+2025-08-20,Interest,Bank interest,540444
+2025-08-21,Transport,Public transport,-469121
+2025-08-21,Transport,Public transport,-255327
+2025-08-21,Freelance,Project payment,6609238
+2025-08-21,Entertainment,Movie,-852780
+2025-08-21,Rent,Apartment rent,-9989682
+2025-08-21,Entertainment,Concert,-696430
+2025-08-21,Eating Out,Cafe,-646071
+2025-08-22,Salary,Monthly salary,39679858
+2025-08-22,Entertainment,Streaming,-827245
+2025-08-23,Gift,Birthday gift,1917144
+2025-08-23,Shopping,Home items,-2075744
+2025-08-23,Transport,Public transport,-129041
+2025-08-23,Salary,Monthly salary,10494003
+2025-08-23,Misc,Miscellaneous,-233011
+2025-08-23,Salary,Monthly salary,38773452
+2025-08-23,Rent,Apartment rent,-3939224
+2025-08-23,Utilities,Water bill,-561312
+2025-08-23,Health,Pharmacy,-1982054
+2025-08-23,Misc,Miscellaneous,-157505
+2025-08-24,Eating Out,Street food,-569970
+2025-08-24,Groceries,Vegetable market,-484230
+2025-08-25,Salary,Monthly salary,17608298
+2025-08-25,Salary,Monthly salary,25437202
+2025-08-25,Salary,Monthly salary,14427708
+2025-08-25,Misc,Miscellaneous,-257295
+2025-08-25,Transport,Taxi,-373318
+2025-08-25,Salary,Monthly salary,32522525
+2025-08-25,Salary,Monthly salary,12846908
+2025-08-25,Entertainment,Streaming,-662625
+2025-08-25,Misc,Miscellaneous,-315090
+2025-08-26,Gift,Gift from family,2664816
+2025-08-26,Entertainment,Streaming,-495114
+2025-08-26,Health,Doctor appointment,-1315874
+2025-08-26,Transport,Gas,-182654
+2025-08-26,Transport,Gas,-90021
+2025-08-26,Utilities,Internet,-543164
+2025-08-26,Loan Payment,Loan repayment,-8342874
+2025-08-26,Misc,Miscellaneous,-120763
+2025-08-26,Misc,Miscellaneous,-310916
+2025-08-27,Transport,Taxi,-458986
+2025-08-27,Shopping,Electronics,-4265416
+2025-08-27,Loan Payment,Loan repayment,-3685876
+2025-08-27,Rent,Apartment rent,-13227668
+2025-08-27,Salary,Monthly salary,17912330
+2025-08-27,Loan Payment,Loan repayment,-8978518
+2025-08-27,Rent,Apartment rent,-4589853
+2025-08-27,Eating Out,Restaurant,-177572
+2025-08-27,Misc,Miscellaneous,-217151
+2025-08-27,Transport,Taxi,-35157
+2025-08-28,Interest,Bank interest,1470679
+2025-08-28,Misc,Miscellaneous,-219189
+2025-08-28,Transport,Gas,-367423
+2025-08-29,Eating Out,Street food,-495463
+2025-08-29,Rent,Apartment rent,-7351624
+2025-08-29,Loan Payment,Loan repayment,-8244937
+2025-08-29,Entertainment,Concert,-588667
+2025-08-30,Transport,Public transport,-194177
+2025-08-30,Gift,Birthday gift,1007180
+2025-08-30,Loan Payment,Loan repayment,-3787709
+2025-08-30,Gift,Birthday gift,1689706
+2025-08-30,Transport,Gas,-143140
+2025-08-30,Rent,Apartment rent,-3863659
+2025-08-30,Utilities,Water bill,-741170
+2025-08-30,Rent,Apartment rent,-9054053
+2025-08-30,Health,Pharmacy,-1242712
+2025-08-31,Utilities,Water bill,-1011764
+2025-08-31,Entertainment,Streaming,-181239
+2025-08-31,Loan Payment,Loan repayment,-9880652
+2025-08-31,Groceries,Supermarket,-543136
+2025-09-01,Utilities,Electricity bill,-196141
+2025-09-01,Transport,Public transport,-190340
+2025-09-01,Shopping,Home items,-792547
+2025-09-01,Groceries,Vegetable market,-1255859
+2025-09-01,Health,Doctor appointment,-1496452
+2025-09-01,Transport,Taxi,-170319
+2025-09-01,Groceries,Supermarket,-165393
+2025-09-01,Rent,Apartment rent,-6946593
+2025-09-02,Health,Doctor appointment,-1218406
+2025-09-02,Utilities,Electricity bill,-1559682
+2025-09-03,Groceries,Supermarket,-1353312
+2025-09-03,Misc,Miscellaneous,-150018
+2025-09-03,Groceries,Supermarket,-1207092
+2025-09-03,Misc,Miscellaneous,-40189
+2025-09-03,Health,Doctor appointment,-1857011
+2025-09-03,Transport,Public transport,-214395
+2025-09-03,Health,Doctor appointment,-1550979
+2025-09-03,Transport,Public transport,-36663
+2025-09-03,Misc,Miscellaneous,-169200
+2025-09-04,Shopping,Clothes,-273795
+2025-09-04,Loan Payment,Loan repayment,-6009962
+2025-09-04,Entertainment,Streaming,-491709
+2025-09-04,Utilities,Water bill,-1555015
+2025-09-04,Gift,Gift from family,1245087
+2025-09-04,Freelance,Client payment,14750396
+2025-09-05,Gift,Birthday gift,2305815
+2025-09-05,Shopping,Electronics,-909351
+2025-09-05,Interest,Bank interest,1495419
+2025-09-05,Transport,Public transport,-358075
+2025-09-05,Transport,Public transport,-122031
+2025-09-05,Transport,Public transport,-460386
+2025-09-06,Gift,Birthday gift,882054
+2025-09-07,Rent,Apartment rent,-11867021
+2025-09-08,Loan Payment,Loan repayment,-3012001
+2025-09-08,Groceries,Supermarket,-365513
+2025-09-09,Health,Doctor appointment,-1475755
+2025-09-10,Misc,Miscellaneous,-259132
+2025-09-10,Utilities,Water bill,-678515
+2025-09-11,Interest,Bank interest,1005678
+2025-09-11,Utilities,Electricity bill,-1640638
+2025-09-12,Utilities,Internet,-372655
+2025-09-12,Rent,Apartment rent,-4577198
+2025-09-12,Loan Payment,Loan repayment,-9597071
+2025-09-12,Shopping,Home items,-1687331
+2025-09-13,Shopping,Clothes,-2849826
+2025-09-13,Salary,Monthly salary,24390954
+2025-09-14,Transport,Public transport,-205463
+2025-09-14,Eating Out,Street food,-358900
+2025-09-14,Health,Pharmacy,-1364593
+2025-09-14,Freelance,Project payment,14386997
+2025-09-14,Shopping,Clothes,-4368239
+2025-09-14,Entertainment,Concert,-560128
+2025-09-15,Entertainment,Streaming,-496092
+2025-09-15,Freelance,Project payment,6384293
+2025-09-15,Salary,Monthly salary,19367447
+2025-09-15,Transport,Gas,-389098
+2025-09-15,Groceries,Supermarket,-555965
+2025-09-15,Shopping,Clothes,-3364802
+2025-09-15,Transport,Taxi,-251349
+2025-09-16,Misc,Miscellaneous,-477718
+2025-09-16,Utilities,Internet,-716623
+2025-09-16,Misc,Miscellaneous,-116080
+2025-09-16,Groceries,Vegetable market,-1449847
+2025-09-16,Eating Out,Street food,-378035
+2025-09-16,Eating Out,Street food,-100847
+2025-09-16,Misc,Miscellaneous,-106101
+2025-09-17,Loan Payment,Loan repayment,-4619747
+2025-09-17,Groceries,Supermarket,-490950
+2025-09-17,Rent,Apartment rent,-11477353
+2025-09-17,Utilities,Water bill,-731960
+2025-09-17,Loan Payment,Loan repayment,-1066565
+2025-09-17,Salary,Monthly salary,11457487
+2025-09-17,Transport,Public transport,-431667
+2025-09-17,Groceries,Supermarket,-802237
+2025-09-17,Loan Payment,Loan repayment,-7790583
+2025-09-17,Health,Pharmacy,-1826478
+2025-09-18,Utilities,Internet,-432491
+2025-09-18,Loan Payment,Loan repayment,-3255521
+2025-09-18,Health,Doctor appointment,-356744
+2025-09-18,Health,Pharmacy,-1281549
+2025-09-18,Freelance,Project payment,6034093
+2025-09-18,Entertainment,Movie,-316065
+2025-09-18,Eating Out,Street food,-602281
+2025-09-19,Rent,Apartment rent,-7475655
+2025-09-19,Loan Payment,Loan repayment,-3058276
+2025-09-19,Groceries,Vegetable market,-641042
+2025-09-19,Gift,Gift from family,1386810
+2025-09-19,Transport,Gas,-31124
+2025-09-19,Interest,Bank interest,918585
+2025-09-20,Transport,Gas,-418190
+2025-09-20,Groceries,Supermarket,-814746
+2025-09-20,Entertainment,Concert,-135201
+2025-09-20,Loan Payment,Loan repayment,-5425554
+2025-09-20,Rent,Apartment rent,-2831504
+2025-09-20,Groceries,Vegetable market,-1282993
+2025-09-20,Gift,Gift from family,2779091
+2025-09-20,Health,Doctor appointment,-1081822
+2025-09-20,Rent,Apartment rent,-9616256
+2025-09-21,Shopping,Clothes,-4410775
+2025-09-21,Gift,Gift from family,2674963
+2025-09-21,Misc,Miscellaneous,-72251
+2025-09-21,Interest,Bank interest,77993
+2025-09-21,Utilities,Water bill,-533906
+2025-09-21,Rent,Apartment rent,-10692571
+2025-09-21,Rent,Apartment rent,-3213614
+2025-09-21,Misc,Miscellaneous,-173683
+2025-09-21,Rent,Apartment rent,-10676380
+2025-09-22,Rent,Apartment rent,-7560986
+2025-09-23,Rent,Apartment rent,-8994539
+2025-09-24,Transport,Taxi,-107444
+2025-09-24,Salary,Monthly salary,28386894
+2025-09-24,Groceries,Supermarket,-947236
+2025-09-24,Misc,Miscellaneous,-293588
+2025-09-24,Interest,Bank interest,1018317
+2025-09-24,Freelance,Project payment,3366763
+2025-09-25,Salary,Monthly salary,38564709
+2025-09-25,Salary,Monthly salary,35951889
+2025-09-25,Eating Out,Street food,-654773
+2025-09-25,Shopping,Clothes,-2092571
+2025-09-25,Salary,Monthly salary,29422769
+2025-09-25,Salary,Monthly salary,35635055
+2025-09-25,Salary,Monthly salary,24349734
+2025-09-25,Loan Payment,Loan repayment,-8461795
+2025-09-25,Entertainment,Streaming,-104375
+2025-09-26,Health,Doctor appointment,-823671
+2025-09-26,Misc,Miscellaneous,-54518
+2025-09-26,Shopping,Clothes,-1676056
+2025-09-26,Interest,Bank interest,449557
+2025-09-26,Misc,Miscellaneous,-335026
+2025-09-26,Health,Pharmacy,-241349
+2025-09-26,Utilities,Electricity bill,-919718
+2025-09-26,Rent,Apartment rent,-9201877
+2025-09-26,Misc,Miscellaneous,-59166
+2025-09-26,Transport,Public transport,-185758
+2025-09-27,Misc,Miscellaneous,-337832
+2025-09-27,Health,Doctor appointment,-1617546
+2025-09-27,Loan Payment,Loan repayment,-8387693
+2025-09-27,Transport,Gas,-117933
+2025-09-27,Utilities,Internet,-880636
+2025-09-27,Utilities,Internet,-396636
+2025-09-27,Rent,Apartment rent,-7830999
+2025-09-27,Transport,Public transport,-34441
+2025-09-27,Freelance,Client payment,8828711
+2025-09-28,Transport,Gas,-14924
+2025-09-28,Groceries,Vegetable market,-801713
+2025-09-28,Misc,Miscellaneous,-92215
+2025-09-28,Misc,Miscellaneous,-274165
+2025-09-28,Shopping,Clothes,-1718371
+2025-09-28,Groceries,Vegetable market,-591750
+2025-09-28,Eating Out,Street food,-715187
+2025-09-28,Misc,Miscellaneous,-307889
+2025-09-28,Entertainment,Concert,-147834
+2025-09-29,Health,Doctor appointment,-1737943
+2025-09-29,Groceries,Supermarket,-76188
+2025-09-29,Transport,Taxi,-192551
+2025-09-29,Transport,Public transport,-29911
+2025-09-29,Shopping,Clothes,-4048433
+2025-09-29,Loan Payment,Loan repayment,-6533426
+2025-09-30,Transport,Taxi,-275359
+2025-09-30,Loan Payment,Loan repayment,-4614262
+2025-09-30,Loan Payment,Loan repayment,-914278
+2025-09-30,Transport,Taxi,-161983
+2025-09-30,Utilities,Electricity bill,-886118
+2025-10-01,Entertainment,Concert,-798208
+2025-10-01,Utilities,Water bill,-216283
+2025-10-01,Gift,Birthday gift,824599
+2025-10-01,Health,Doctor appointment,-87192
+2025-10-02,Entertainment,Movie,-358157
+2025-10-02,Utilities,Water bill,-1739535
+2025-10-02,Shopping,Clothes,-3025007
+2025-10-02,Health,Doctor appointment,-940095
+2025-10-03,Utilities,Water bill,-379851
+2025-10-03,Freelance,Client payment,9248484
+2025-10-03,Freelance,Client payment,10259800
+2025-10-03,Loan Payment,Loan repayment,-4231923
+2025-10-04,Loan Payment,Loan repayment,-3536787
+2025-10-04,Salary,Monthly salary,30386403
+2025-10-04,Salary,Monthly salary,26719603
+2025-10-04,Misc,Miscellaneous,-245286
+2025-10-04,Interest,Bank interest,582084
+2025-10-05,Health,Pharmacy,-1253605
+2025-10-05,Loan Payment,Loan repayment,-1153523
+2025-10-05,Shopping,Clothes,-4338547
+2025-10-05,Freelance,Project payment,5941055
+2025-10-05,Health,Pharmacy,-484808
+2025-10-06,Health,Pharmacy,-1662282
+2025-10-06,Misc,Miscellaneous,-68258
+2025-10-06,Loan Payment,Loan repayment,-3624820
+2025-10-06,Interest,Bank interest,122980
+2025-10-06,Groceries,Supermarket,-1343389
+2025-10-07,Freelance,Project payment,14044721
+2025-10-07,Shopping,Clothes,-3408692
+2025-10-07,Freelance,Project payment,6487724
+2025-10-08,Shopping,Clothes,-4970144
+2025-10-08,Utilities,Internet,-1314873
+2025-10-08,Transport,Taxi,-473372
+2025-10-09,Freelance,Project payment,6626638
+2025-10-09,Shopping,Electronics,-1332888
+2025-10-09,Shopping,Electronics,-2110169
+2025-10-09,Shopping,Home items,-3031551
+2025-10-09,Loan Payment,Loan repayment,-2975591
+2025-10-09,Misc,Miscellaneous,-352144
+2025-10-10,Transport,Taxi,-264250
+2025-10-10,Gift,Birthday gift,2713193
+2025-10-10,Utilities,Internet,-330266
+2025-10-10,Transport,Gas,-29062
+2025-10-10,Eating Out,Cafe,-394584
+2025-10-11,Loan Payment,Loan repayment,-2608611
+2025-10-11,Entertainment,Concert,-569046
+2025-10-11,Health,Pharmacy,-1152730
+2025-10-11,Utilities,Electricity bill,-564749
+2025-10-12,Eating Out,Restaurant,-131941
+2025-10-12,Gift,Birthday gift,550978
+2025-10-12,Health,Doctor appointment,-1662752
+2025-10-12,Groceries,Vegetable market,-1149296
+2025-10-12,Freelance,Client payment,6674740
+2025-10-12,Groceries,Vegetable market,-1181631
+2025-10-13,Transport,Public transport,-462705
+2025-10-13,Rent,Apartment rent,-12568794
+2025-10-13,Gift,Gift from family,618794
+2025-10-13,Loan Payment,Loan repayment,-9455395
+2025-10-14,Groceries,Vegetable market,-1177516
+2025-10-14,Utilities,Electricity bill,-822886
+2025-10-14,Utilities,Internet,-1314808
+2025-10-14,Transport,Public transport,-65133
+2025-10-14,Entertainment,Movie,-507949
+2025-10-15,Eating Out,Cafe,-654524
+2025-10-15,Utilities,Internet,-411768
+2025-10-15,Shopping,Electronics,-1626169
+2025-10-15,Shopping,Clothes,-241435
+2025-10-15,Eating Out,Street food,-793823
+2025-10-15,Utilities,Electricity bill,-660270
+2025-10-15,Transport,Public transport,-106858
+2025-10-16,Salary,Monthly salary,35698660
+2025-10-16,Loan Payment,Loan repayment,-1269387
+2025-10-16,Entertainment,Movie,-41621
+2025-10-16,Misc,Miscellaneous,-218865
+2025-10-16,Gift,Gift from family,1956990
+2025-10-16,Rent,Apartment rent,-2277806
+2025-10-16,Rent,Apartment rent,-5037497
+2025-10-16,Rent,Apartment rent,-11779090
+2025-10-16,Eating Out,Cafe,-669250
+2025-10-16,Misc,Miscellaneous,-244468
+2025-10-17,Utilities,Electricity bill,-1297174
+2025-10-17,Entertainment,Concert,-833223
+2025-10-17,Groceries,Vegetable market,-65972
+2025-10-17,Utilities,Internet,-928592
+2025-10-17,Gift,Birthday gift,1854398
+2025-10-17,Health,Pharmacy,-650026
+2025-10-17,Rent,Apartment rent,-2589911
+2025-10-17,Shopping,Clothes,-190017
+2025-10-17,Gift,Birthday gift,942205
+2025-10-17,Eating Out,Restaurant,-433606
+2025-10-18,Shopping,Home items,-1068176
+2025-10-18,Rent,Apartment rent,-7999574
+2025-10-18,Groceries,Supermarket,-431740
+2025-10-18,Health,Pharmacy,-144911
+2025-10-18,Rent,Apartment rent,-5323910
+2025-10-19,Rent,Apartment rent,-2994600
+2025-10-19,Entertainment,Movie,-338247
+2025-10-19,Health,Pharmacy,-1578923
+2025-10-19,Entertainment,Movie,-963337
+2025-10-19,Interest,Bank interest,1875232
+2025-10-19,Interest,Bank interest,309290
+2025-10-19,Transport,Taxi,-251147
+2025-10-19,Utilities,Electricity bill,-1425959
+2025-10-20,Utilities,Electricity bill,-325728
+2025-10-21,Loan Payment,Loan repayment,-6984249
+2025-10-21,Loan Payment,Loan repayment,-5579772
+2025-10-21,Misc,Miscellaneous,-242004
+2025-10-22,Shopping,Home items,-4288165
+2025-10-22,Loan Payment,Loan repayment,-5099411
+2025-10-22,Rent,Apartment rent,-3782441
+2025-10-22,Loan Payment,Loan repayment,-3621421
+2025-10-23,Transport,Public transport,-156153
+2025-10-23,Misc,Miscellaneous,-51953
+2025-10-23,Interest,Bank interest,1280849
+2025-10-23,Utilities,Electricity bill,-833611
+2025-10-23,Entertainment,Movie,-342494
+2025-10-24,Entertainment,Movie,-592623
+2025-10-24,Eating Out,Street food,-268164
+2025-10-24,Eating Out,Street food,-107246
+2025-10-25,Salary,Monthly salary,28553891
+2025-10-25,Salary,Monthly salary,16142169
+2025-10-26,Transport,Gas,-99714
+2025-10-26,Utilities,Water bill,-1168547
+2025-10-26,Utilities,Electricity bill,-1608856
+2025-10-26,Loan Payment,Loan repayment,-1849312
+2025-10-27,Shopping,Electronics,-1030111
+2025-10-27,Shopping,Electronics,-2801691
+2025-10-27,Entertainment,Movie,-362109
+2025-10-27,Shopping,Electronics,-243912
+2025-10-27,Eating Out,Cafe,-357449
+2025-10-27,Utilities,Internet,-1565259
+2025-10-28,Loan Payment,Loan repayment,-9392697
+2025-10-28,Health,Doctor appointment,-909133
+2025-10-28,Entertainment,Streaming,-873921
+2025-10-28,Entertainment,Streaming,-464394
+2025-10-28,Utilities,Water bill,-514128
+2025-10-28,Groceries,Vegetable market,-1421134
+2025-10-28,Utilities,Electricity bill,-406428
+2025-10-28,Rent,Apartment rent,-12038639
+2025-10-29,Health,Pharmacy,-1885591
+2025-10-29,Groceries,Vegetable market,-1077147
+2025-10-29,Salary,Monthly salary,28611456
+2025-10-29,Transport,Gas,-73377
+2025-10-29,Shopping,Home items,-1769442
+2025-10-29,Misc,Miscellaneous,-164058
+2025-10-29,Entertainment,Concert,-670941
+2025-10-29,Misc,Miscellaneous,-263876
+2025-10-29,Gift,Birthday gift,717006
+2025-10-29,Loan Payment,Loan repayment,-1772860
+2025-10-30,Health,Pharmacy,-1508442
+2025-10-30,Freelance,Project payment,5900339
+2025-10-30,Rent,Apartment rent,-7248433
+2025-10-30,Groceries,Vegetable market,-632857
+2025-10-30,Eating Out,Restaurant,-551783
+2025-10-30,Eating Out,Restaurant,-361122
+2025-10-30,Loan Payment,Loan repayment,-6926421
+2025-10-30,Misc,Miscellaneous,-77630
+2025-10-30,Misc,Miscellaneous,-337864
+2025-10-31,Groceries,Supermarket,-1126710
+2025-10-31,Health,Pharmacy,-134798
+2025-10-31,Rent,Apartment rent,-4717410
+2025-10-31,Transport,Taxi,-176630
+2025-10-31,Groceries,Supermarket,-995201
+2025-10-31,Entertainment,Streaming,-709093
+2025-10-31,Shopping,Home items,-4225546
+2025-10-31,Groceries,Supermarket,-1237354
+2025-10-31,Shopping,Home items,-3231492
+2025-11-01,Misc,Miscellaneous,-60577
+2025-11-02,Misc,Miscellaneous,-10092
+2025-11-02,Misc,Miscellaneous,-449573
+2025-11-02,Entertainment,Movie,-418613
+2025-11-02,Health,Doctor appointment,-1199730
+2025-11-02,Health,Doctor appointment,-818615
+2025-11-02,Rent,Apartment rent,-4089720
+2025-11-02,Loan Payment,Loan repayment,-1361172
+2025-11-03,Rent,Apartment rent,-7250169
+2025-11-03,Shopping,Home items,-3654554
+2025-11-03,Eating Out,Restaurant,-505617
+2025-11-03,Loan Payment,Loan repayment,-5119271
+2025-11-03,Entertainment,Concert,-115065
+2025-11-03,Groceries,Vegetable market,-151305
+2025-11-03,Transport,Public transport,-329365
+2025-11-04,Health,Pharmacy,-740808
+2025-11-04,Health,Pharmacy,-1971243
+2025-11-04,Utilities,Water bill,-1518740
+2025-11-04,Loan Payment,Loan repayment,-9762150
+2025-11-04,Health,Pharmacy,-870118
+2025-11-04,Rent,Apartment rent,-5833682
+2025-11-04,Groceries,Vegetable market,-861295
+2025-11-04,Entertainment,Concert,-451653
+2025-11-04,Groceries,Supermarket,-676246
+2025-11-04,Entertainment,Movie,-281625
+2025-11-05,Rent,Apartment rent,-10002708
+2025-11-05,Eating Out,Cafe,-746963
+2025-11-05,Loan Payment,Loan repayment,-9821904
+2025-11-05,Health,Doctor appointment,-1407004
+2025-11-05,Loan Payment,Loan repayment,-5604445
+2025-11-05,Rent,Apartment rent,-11861155
+2025-11-06,Eating Out,Restaurant,-742017
+2025-11-06,Utilities,Electricity bill,-1116233
+2025-11-06,Utilities,Water bill,-450573
+2025-11-06,Utilities,Internet,-236170
+2025-11-06,Shopping,Clothes,-4863515
+2025-11-06,Salary,Monthly salary,25200868
+2025-11-06,Misc,Miscellaneous,-59119
+2025-11-07,Entertainment,Concert,-490966
+2025-11-07,Utilities,Internet,-1488984
+2025-11-07,Groceries,Supermarket,-974672
+2025-11-07,Loan Payment,Loan repayment,-9271871
+2025-11-07,Utilities,Electricity bill,-400018
+2025-11-07,Groceries,Supermarket,-183519
+2025-11-07,Shopping,Electronics,-1897661
+2025-11-07,Groceries,Supermarket,-1360989
+2025-11-08,Eating Out,Street food,-569311
+2025-11-08,Eating Out,Restaurant,-165658
+2025-11-08,Groceries,Supermarket,-1265384
+2025-11-09,Transport,Gas,-381966
+2025-11-10,Utilities,Electricity bill,-910787
+2025-11-10,Shopping,Home items,-1317331
+2025-11-10,Transport,Taxi,-358924
+2025-11-10,Eating Out,Restaurant,-494259
+2025-11-10,Groceries,Vegetable market,-290497
+2025-11-10,Rent,Apartment rent,-13822216
+2025-11-10,Utilities,Electricity bill,-1996830
+2025-11-11,Shopping,Clothes,-3955610
+2025-11-11,Shopping,Home items,-1502328
+2025-11-11,Transport,Gas,-44993
+2025-11-11,Shopping,Clothes,-270503
+2025-11-11,Interest,Bank interest,706434
+2025-11-11,Transport,Gas,-42913
+2025-11-11,Shopping,Electronics,-990676
+2025-11-11,Rent,Apartment rent,-7528099
+2025-11-11,Interest,Bank interest,506934
+2025-11-11,Shopping,Electronics,-855854
+2025-11-12,Utilities,Internet,-292092
+2025-11-12,Rent,Apartment rent,-2375495
+2025-11-12,Interest,Bank interest,414835
+2025-11-12,Misc,Miscellaneous,-102228
+2025-11-12,Loan Payment,Loan repayment,-7914881
+2025-11-12,Eating Out,Street food,-463613
+2025-11-13,Eating Out,Cafe,-610830
+2025-11-13,Salary,Monthly salary,38238183
+2025-11-13,Entertainment,Streaming,-650723
+2025-11-13,Health,Pharmacy,-973461
+2025-11-13,Utilities,Internet,-670629
+2025-11-13,Misc,Miscellaneous,-121232
+2025-11-13,Health,Doctor appointment,-853499
+2025-11-14,Groceries,Vegetable market,-571266
+2025-11-14,Utilities,Water bill,-493870
+2025-11-14,Freelance,Client payment,2527442
+2025-11-14,Eating Out,Street food,-476821
+2025-11-14,Rent,Apartment rent,-13558416
+2025-11-14,Shopping,Home items,-1262198
+2025-11-14,Rent,Apartment rent,-9740442
+2025-11-14,Misc,Miscellaneous,-430584
+2025-11-14,Health,Doctor appointment,-92109
+2025-11-14,Groceries,Supermarket,-529404
+2025-11-15,Groceries,Vegetable market,-1473005
+2025-11-15,Shopping,Clothes,-4873713
+2025-11-15,Transport,Gas,-145434
+2025-11-15,Misc,Miscellaneous,-32874
+2025-11-15,Misc,Miscellaneous,-468670
+2025-11-15,Shopping,Clothes,-2681102
+2025-11-15,Interest,Bank interest,1924430
+2025-11-16,Utilities,Internet,-678946
+2025-11-16,Interest,Bank interest,1676883
+2025-11-16,Utilities,Internet,-174440
+2025-11-16,Shopping,Home items,-4447006
+2025-11-17,Utilities,Water bill,-367177
+2025-11-17,Eating Out,Street food,-776291
+2025-11-17,Eating Out,Cafe,-307111
+2025-11-17,Groceries,Vegetable market,-503633
+2025-11-17,Health,Pharmacy,-190135
+2025-11-17,Misc,Miscellaneous,-406235
+2025-11-18,Eating Out,Cafe,-214072
+2025-11-18,Loan Payment,Loan repayment,-9643114
+2025-11-18,Rent,Apartment rent,-4094200
+2025-11-18,Entertainment,Movie,-109044
+2025-11-18,Entertainment,Streaming,-476247
+2025-11-19,Health,Doctor appointment,-323272
+2025-11-19,Misc,Miscellaneous,-258343
+2025-11-19,Groceries,Vegetable market,-231346
+2025-11-19,Salary,Monthly salary,34240353
+2025-11-19,Groceries,Supermarket,-1339777
+2025-11-19,Rent,Apartment rent,-14926995
+2025-11-20,Groceries,Supermarket,-730347
+2025-11-20,Loan Payment,Loan repayment,-7685961
+2025-11-20,Misc,Miscellaneous,-214757
+2025-11-20,Freelance,Client payment,2776518
+2025-11-21,Health,Doctor appointment,-412252
+2025-11-22,Rent,Apartment rent,-3911813
+2025-11-22,Misc,Miscellaneous,-331053
+2025-11-22,Health,Doctor appointment,-1707749
+2025-11-22,Transport,Taxi,-35468
+2025-11-22,Health,Doctor appointment,-1565857
+2025-11-22,Health,Pharmacy,-1261233
+2025-11-22,Freelance,Client payment,2864368
+2025-11-22,Shopping,Clothes,-1960509
+2025-11-22,Utilities,Electricity bill,-377970
+2025-11-23,Entertainment,Streaming,-267569
+2025-11-23,Gift,Birthday gift,1543986
+2025-11-23,Utilities,Electricity bill,-1771529
+2025-11-23,Loan Payment,Loan repayment,-8467893
+2025-11-23,Shopping,Home items,-4350027
+2025-11-23,Eating Out,Cafe,-759319
+2025-11-23,Entertainment,Streaming,-705444
+2025-11-23,Misc,Miscellaneous,-106151
+2025-11-23,Health,Doctor appointment,-477394
+2025-11-23,Utilities,Electricity bill,-903905
+2025-11-24,Misc,Miscellaneous,-411350
+2025-11-24,Interest,Bank interest,1425712
+2025-11-24,Shopping,Home items,-1996899
+2025-11-24,Freelance,Project payment,13692010
+2025-11-24,Transport,Taxi,-136069
+2025-11-24,Entertainment,Streaming,-788163
+2025-11-25,Shopping,Home items,-4479390
+2025-11-25,Groceries,Vegetable market,-234946
+2025-11-26,Eating Out,Cafe,-150463
+2025-11-26,Health,Doctor appointment,-1208360
+2025-11-26,Misc,Miscellaneous,-226312
+2025-11-26,Eating Out,Restaurant,-520338
+2025-11-26,Health,Doctor appointment,-598367
+2025-11-26,Eating Out,Cafe,-726739
+2025-11-26,Utilities,Electricity bill,-688676
+2025-11-26,Health,Doctor appointment,-359796
+2025-11-27,Entertainment,Streaming,-782718
+2025-11-27,Entertainment,Concert,-908062
+2025-11-27,Transport,Public transport,-391826
+2025-11-27,Misc,Miscellaneous,-104741
+2025-11-27,Interest,Bank interest,278632
+2025-11-27,Loan Payment,Loan repayment,-1986143
+2025-11-27,Salary,Monthly salary,21191176
+2025-11-27,Loan Payment,Loan repayment,-8327702
+2025-11-28,Shopping,Clothes,-4819428
+2025-11-28,Rent,Apartment rent,-11612175
+2025-11-28,Groceries,Supermarket,-82936
