@@ -97,6 +97,9 @@ function TransactionTable() {
 }
 
 function DashboardContent() {
+    let totalIncome = calculateTotalIncome(LoadTransactions())
+    let totalExpense = calculateTotalExpense(LoadTransactions())
+    let netBalance = totalIncome + totalExpense
     return (
         <div className="space-y-6">
             {/* Summary Cards Section */}
@@ -105,9 +108,9 @@ function DashboardContent() {
                     Summary
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <SummaryCard title="Total Income" value={calculateTotalIncome(LoadTransactions())}/>
-                    <SummaryCard title="Total Expenses" value={calculateTotalExpense(LoadTransactions())}/>
-                    <SummaryCard title="Net Balance" value={2586.46}/>
+                    <SummaryCard title="Total Income" value={totalIncome}/>
+                    <SummaryCard title="Total Expenses" value={totalExpense}/>
+                    <SummaryCard title="Net Balance" value={netBalance}/>
                 </div>
             </section>
 

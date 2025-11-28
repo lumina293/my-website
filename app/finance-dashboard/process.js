@@ -17,3 +17,4 @@ export function calculateTotalExpense(transactions) {
     }
     return totalExpense
 }
+
