@@ -13,6 +13,10 @@ import {
     YAxis, Bar
 } from "recharts"
 import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
+import {
+    calculateTotalIncome
+} from '@/app/finance-dashboard/process';
+import {LoadTransactions} from "@/app/finance-dashboard/data";
 
 export default function FinanceDashboard() {
     return (
@@ -100,9 +104,9 @@ function DashboardContent() {
                     Summary
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <SummaryCard title="Total Income" value={3000.00} isPositive={true}/>
-                    <SummaryCard title="Total Expenses" value={413.54} isPositive={false}/>
-                    <SummaryCard title="Net Balance" value={2586.46} isPositive={true}/>
+                    <SummaryCard title="Total Income" value={calculateTotalIncome(LoadTransactions())}/>
+                    <SummaryCard title="Total Expenses" value={-413.54}/>
+                    <SummaryCard title="Net Balance" value={2586.46}/>
                 </div>
             </section>
 
@@ -112,17 +116,15 @@ function DashboardContent() {
     );
 }
 
-function SummaryCard({title, value, isPositive}) {
+function SummaryCard({title, value}) {
+    let isPositive = value >= 0
     return (
         <div className="bg-white rounded-lg shadow p-4">
             <h3 className="text-xs font-medium text-gray-600 mb-1">
                 {title}
             </h3>
             <p className={`text-2xl font-bold ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
-                {isPositive ? '+' : '-'}${Math.abs(value).toLocaleString('en-US', {
-                minimumFractionDigits: 2,
-                maximumFractionDigits: 2
-            })}
+                {isPositive ? '+' : '-'}{Math.abs(value).toLocaleString()}đ
             </p>
         </div>
     );
