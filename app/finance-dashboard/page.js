@@ -17,7 +17,8 @@ import {
     calculateTotalIncome,
     calculateTotalExpense,
     calculateIncomeByCategory,
-    calculateExpenseByCategory
+    calculateExpenseByCategory,
+    calculateExpenseByDate
 } from '@/app/finance-dashboard/process';
 import {LoadTransactions} from "@/app/finance-dashboard/data";
 
@@ -213,48 +214,17 @@ function CategoryPieChart({title, data, isIncome}) {
 
 
 function ExpensesByDay() {
-    let mockExpensesByDay = [
-        {date: "01/11/2025", amount: 100},
-        {date: "02/11/2025", amount: 80},
-        {date: "03/11/2025", amount: 70},
-        {date: "04/11/2025", amount: 120},
-        {date: "05/11/2025", amount: 110},
-        {date: "06/11/2025", amount: 95},
-        {date: "07/11/2025", amount: 60},
-        {date: "08/11/2025", amount: 130},
-        {date: "09/11/2025", amount: 85},
-        {date: "10/11/2025", amount: 75},
-        {date: "11/11/2025", amount: 90},
-        {date: "12/11/2025", amount: 105},
-        {date: "13/11/2025", amount: 115},
-        {date: "14/11/2025", amount: 80},
-        {date: "15/11/2025", amount: 100},
-        {date: "16/11/2025", amount: 70},
-        {date: "17/11/2025", amount: 120},
-        {date: "18/11/2025", amount: 110},
-        {date: "19/11/2025", amount: 95},
-        {date: "20/11/2025", amount: 60},
-        {date: "21/11/2025", amount: 130},
-        {date: "22/11/2025", amount: 85},
-        {date: "23/11/2025", amount: 75},
-        {date: "24/11/2025", amount: 90},
-        {date: "25/11/2025", amount: 105},
-        {date: "26/11/2025", amount: 115},
-        {date: "27/11/2025", amount: 80},
-        {date: "28/11/2025", amount: 100},
-        {date: "29/11/2025", amount: 70},
-        {date: "30/11/2025", amount: 120},
-    ]
-
+    let expensesByDay = calculateExpenseByDate(LoadTransactions())
+    let expenseByLast30Days = expensesByDay.slice(expensesByDay.length - 30, expensesByDay.length)
     return (
         <div className="container mx-auto px-4 py-8">
             <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    Expenses by day
+                    Expenses by date
                 </h2>
                 <BarChartCard
-                    title="How much I spend each day"
-                    data={mockExpensesByDay}
+                    title="How much I spend each day in the last 30 days"
+                    data={expenseByLast30Days}
                 />
             </section>
         </div>

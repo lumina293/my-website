@@ -64,3 +64,20 @@ export function calculateExpenseByCategory(transactions) {
     return expenseByCategoryArr
 }
 
+export function calculateExpenseByDate(transactions) {
+    let expenseByDate = new Map()
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].amount < 0) {
+            if (!(transactions[i].date in expenseByDate)) {
+                expenseByDate[transactions[i].date] = 0
+            }
+            expenseByDate[transactions[i].date] += transactions[i].amount
+        }
+    }
+
+    let expenseByDateArr = []
+    for (let date in expenseByDate) {
+        expenseByDateArr.push({date: date, amount: Math.abs(expenseByDate[date])})
+    }
+    return expenseByDateArr
+}
