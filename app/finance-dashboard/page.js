@@ -16,7 +16,8 @@ import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
 import {
     calculateTotalIncome,
     calculateTotalExpense,
-    calculateIncomeByCategory
+    calculateIncomeByCategory,
+    calculateExpenseByCategory
 } from '@/app/finance-dashboard/process';
 import {LoadTransactions} from "@/app/finance-dashboard/data";
 
@@ -136,18 +137,9 @@ function SummaryCard({title, value}) {
 }
 
 function CategoryBreakdownCharts() {
-    // Mock income data by category
-    let incomeByCategory = calculateIncomeByCategory(LoadTransactions())
-
-    // Mock expense data by category
-    let expenseByCategory = [
-        {category: "Groceries", amount: 107.80},
-        {category: "Bills", amount: 150.00},
-        {category: "Shopping", amount: 89.99},
-        {category: "Dining", amount: 28.75},
-        {category: "Entertainment", amount: 25.00},
-        {category: "Transport", amount: 12.00}
-    ];
+    let transactions = LoadTransactions()
+    let incomeByCategory = calculateIncomeByCategory(transactions)
+    let expenseByCategory = calculateExpenseByCategory(transactions)
 
     return (
         <section>

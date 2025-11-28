@@ -46,4 +46,21 @@ export function calculateIncomeByCategory(transactions) {
     return incomeByCategoryArr
 }
 
+export function calculateExpenseByCategory(transactions) {
+    let expenseByCategory = new Map()
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].amount < 0) {
+            if (!(transactions[i].category in expenseByCategory)) {
+                expenseByCategory[transactions[i].category] = 0
+            }
+            expenseByCategory[transactions[i].category] += transactions[i].amount
+        }
+    }
+
+    let expenseByCategoryArr = []
+    for (let category in expenseByCategory) {
+        expenseByCategoryArr.push({category: category, amount: Math.abs(expenseByCategory[category])})
+    }
+    return expenseByCategoryArr
+}
 
