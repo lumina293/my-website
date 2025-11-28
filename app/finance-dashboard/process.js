@@ -7,3 +7,13 @@ export function calculateTotalIncome(transactions) {
     }
     return totalIncome
 }
+
+export function calculateTotalExpense(transactions) {
+    let totalExpense = 0
+    for (let i = 0; i < transactions.length; i++) {
+        if (transactions[i].amount < 0) {
+            totalExpense += transactions[i].amount
+        }
+    }
+    return totalExpense
+}

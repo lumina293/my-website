@@ -14,7 +14,8 @@ import {
 } from "recharts"
 import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
 import {
-    calculateTotalIncome
+    calculateTotalIncome,
+    calculateTotalExpense
 } from '@/app/finance-dashboard/process';
 import {LoadTransactions} from "@/app/finance-dashboard/data";
 
@@ -105,7 +106,7 @@ function DashboardContent() {
                 </h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <SummaryCard title="Total Income" value={calculateTotalIncome(LoadTransactions())}/>
-                    <SummaryCard title="Total Expenses" value={-413.54}/>
+                    <SummaryCard title="Total Expenses" value={calculateTotalExpense(LoadTransactions())}/>
                     <SummaryCard title="Net Balance" value={2586.46}/>
                 </div>
             </section>
