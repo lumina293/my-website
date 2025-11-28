@@ -43,17 +43,7 @@ export default function FinanceDashboard() {
 }
 
 function TransactionTable() {
-    // Stub transaction data
-    let transactions = [
-        {id: 1, date: "2024-01-15", category: "Groceries", amount: -45.50, description: "Supermarket"},
-        {id: 2, date: "2024-01-14", category: "Salary", amount: 3000.00, description: "Monthly Salary"},
-        {id: 3, date: "2024-01-13", category: "Transport", amount: -12.00, description: "Taxi"},
-        {id: 4, date: "2024-01-12", category: "Dining", amount: -28.75, description: "Restaurant"},
-        {id: 5, date: "2024-01-11", category: "Shopping", amount: -89.99, description: "Clothing"},
-        {id: 6, date: "2024-01-10", category: "Bills", amount: -150.00, description: "Electricity"},
-        {id: 7, date: "2024-01-09", category: "Entertainment", amount: -25.00, description: "Movie tickets"},
-        {id: 8, date: "2024-01-08", category: "Groceries", amount: -62.30, description: "Supermarket"},
-    ];
+    let transactions = LoadTransactions()
 
     return (
         <div className="bg-white rounded-lg shadow">
@@ -73,7 +63,8 @@ function TransactionTable() {
                     </thead>
                     <tbody className="divide-y divide-gray-200">
                     {transactions.map((transaction) => (
-                        <tr key={transaction.id} className="hover:bg-gray-50">
+                        <tr key={transaction.date + transaction.category + transaction.description + transaction.amount}
+                            className="hover:bg-gray-50">
                             <td className="px-4 py-3 text-gray-900">{transaction.date}</td>
                             <td className="px-4 py-3">
                                 <div>
@@ -84,9 +75,9 @@ function TransactionTable() {
                             <td className={`px-4 py-3 text-right font-medium ${
                                 transaction.amount >= 0 ? 'text-green-600' : 'text-red-600'
                             }`}>
-                                {transaction.amount >= 0 ? '+' : ''}{transaction.amount.toLocaleString('en-US', {
+                                {transaction.amount >= 0 ? '+' : ''}{transaction.amount.toLocaleString('vi-VN', {
                                 style: 'currency',
-                                currency: 'USD'
+                                currency: 'VND'
                             })}
                             </td>
                         </tr>
@@ -130,7 +121,10 @@ function SummaryCard({title, value}) {
                 {title}
             </h3>
             <p className={`text-2xl font-bold ${isPositive ? 'text-green-600' : 'text-red-600'}`}>
-                {isPositive ? '+' : '-'}{Math.abs(value).toLocaleString()}đ
+                {isPositive ? '+' : '-'}{Math.abs(value).toLocaleString('vi-VN', {
+                style: 'currency',
+                currency: 'VND'
+            })}
             </p>
         </div>
     );
