@@ -39,7 +39,7 @@ function ProjectsGrid() {
             id: 2,
             name: "Finance Dashboard",
             description: "Personal finance tracker with transaction management, category breakdown charts, and spending analysis to monitor income and expenses.",
-            path: "/finance-dashboard",
+            path: "/projects/finance-dashboard",
             isPrototype: true
         }
     ];
