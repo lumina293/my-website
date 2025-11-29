@@ -26,8 +26,7 @@ function ProjectsHeader() {
 }
 
 function ProjectsGrid() {
-    // Project data - will expand as you create more projects
-    let projects = [
+    let allProjects = [
         {
             name: "Vietnam Geo Dashboard",
             description: "Interactive dashboard visualizing Vietnam's administrative geography, including provinces, communes, population, and area statistics with charts and comparisons.",
@@ -38,7 +37,7 @@ function ProjectsGrid() {
             name: "Finance Dashboard",
             description: "Personal finance tracker with transaction management, category breakdown charts, and spending analysis to monitor income and expenses.",
             path: "/projects/finance-dashboard",
-            isPrototype: true
+            isPrototype: false
         },
         {
             name: "Weather Analytics",
@@ -54,15 +53,38 @@ function ProjectsGrid() {
         }
     ];
 
+    let realProjects = allProjects.filter(project => !project.isPrototype);
+    let prototypeProjects = allProjects.filter(project => project.isPrototype);
+
     return (
         <div className="container mx-auto px-4 py-8">
-            <section>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {projects.map((project) => (
-                        <ProjectCard key={project.path} {...project} />
-                    ))}
-                </div>
-            </section>
+            {/* Real/Completed Projects Section */}
+            {realProjects.length > 0 && (
+                <section className="mb-12">
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                        Completed Projects
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {realProjects.map((project) => (
+                            <ProjectCard key={project.id} {...project} />
+                        ))}
+                    </div>
+                </section>
+            )}
+
+            {/* Prototype Projects Section */}
+            {prototypeProjects.length > 0 && (
+                <section>
+                    <h2 className="text-2xl font-semibold text-gray-900 mb-4">
+                        Prototypes & Experiments
+                    </h2>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        {prototypeProjects.map((project) => (
+                            <ProjectCard key={project.id} {...project} />
+                        ))}
+                    </div>
+                </section>
+            )}
         </div>
     );
 }
