@@ -29,24 +29,27 @@ function ProjectsGrid() {
     // Project data - will expand as you create more projects
     let projects = [
         {
-            id: 1,
             name: "Vietnam Geo Dashboard",
             description: "Interactive dashboard visualizing Vietnam's administrative geography, including provinces, communes, population, and area statistics with charts and comparisons.",
             path: "/projects/vietnam-geo",
             isPrototype: false
         },
         {
-            id: 2,
             name: "Finance Dashboard",
             description: "Personal finance tracker with transaction management, category breakdown charts, and spending analysis to monitor income and expenses.",
             path: "/projects/finance-dashboard",
             isPrototype: true
         },
         {
-            id: 3,
             name: "Weather Analytics",
             description: "Real-time weather dashboard showing current conditions, temperature, humidity, and wind speed for major cities across Vietnam and Asia.",
             path: "/projects/weather-analytics",
+            isPrototype: true
+        },
+        {
+            name: "Investment Portfolio",
+            description: "Investment portfolio tracker with holdings and transaction management, asset allocation and sector breakdown charts, historical performance visualization, live price updates, and risk metrics for rebalancing.",
+            path: "/projects/investment-portfolio",
             isPrototype: true
         }
     ];
@@ -56,7 +59,7 @@ function ProjectsGrid() {
             <section>
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {projects.map((project) => (
-                        <ProjectCard key={project.id} {...project} />
+                        <ProjectCard key={project.path} {...project} />
                     ))}
                 </div>
             </section>
