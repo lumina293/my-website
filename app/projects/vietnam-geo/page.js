@@ -18,12 +18,12 @@ import {
     findTop10PopularCommuneNames,
     findTop10PopularWordsInCommuneName,
 } from "@/app/projects/vietnam-geo/process";
-import ProjectHeader from "@/components/ProjectHeader";
+import Header from "@/components/Header";
 
 export default function VietnamGeo() {
     return (
         <main>
-            <ProjectHeader title="Vietnam Geography" subtitle="Vietnam Geography Dashboard"/>
+            <Header title="Vietnam Geography" subtitle="Vietnam Geography Dashboard"/>
             <UnitStatCards/>
             <ComparisonCards/>
             <ProvinceCommunalUnitsChart/>

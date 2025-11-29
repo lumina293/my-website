@@ -2,12 +2,12 @@
 
 // file: app/projects/investment-portfolio/page.js
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend, LineChart, Line, XAxis, YAxis, CartesianGrid } from "recharts"
-import ProjectHeader from "@/components/ProjectHeader";
+import Header from "@/components/Header";
 
 export default function InvestmentPortfolio() {
     return (
         <main>
-            <ProjectHeader title="Investment Portfolio" subtitle="Track your investment performance and asset allocation"/>
+            <Header title="Investment Portfolio" subtitle="Track your investment performance and asset allocation"/>
             <PortfolioSummaryCards/>
             <PortfolioBreakdownChart/>
             <PerformanceTrendsChart/>

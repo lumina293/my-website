@@ -1,28 +1,12 @@
-// file: app/projects/page.js
+import Header from "@/components/Header";
+
 export default function ProjectsGallery() {
     return (
         <main>
-            <ProjectsHeader/>
+            <Header title="Project Gallery" subtitle="A collection of data visualization and dashboard projects"/>
             <ProjectsGrid/>
         </main>
     )
-}
-
-function ProjectsHeader() {
-    return (
-        <header className="border-b bg-white">
-            <div className="container mx-auto px-4 py-6">
-                <div className="flex flex-col gap-1">
-                    <h1 className="text-3xl font-bold text-gray-900">
-                        Project Gallery
-                    </h1>
-                    <p className="text-sm text-gray-600">
-                        A collection of data visualization and dashboard projects
-                    </p>
-                </div>
-            </div>
-        </header>
-    );
 }
 
 function ProjectsGrid() {

@@ -1,10 +1,10 @@
 // file: app/projects/weather-analytics/page.js
-import ProjectHeader from "@/components/ProjectHeader";
+import Header from "@/components/Header";
 
 export default function WeatherAnalytics() {
     return (
         <main>
-            <ProjectHeader title="Weather Analytics" subtitle="Current weather conditions across major cities in Vietnam and Asia"/>
+            <Header title="Weather Analytics" subtitle="Current weather conditions across major cities in Vietnam and Asia"/>
             <VietnamCitiesSection/>
             <AsianCitiesSection/>
         </main>
