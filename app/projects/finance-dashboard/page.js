@@ -19,8 +19,8 @@ import {
     calculateIncomeByCategory,
     calculateExpenseByCategory,
     calculateExpenseByDate
-} from '@/app/finance-dashboard/process';
-import {LoadTransactions} from "@/app/finance-dashboard/data";
+} from '@/app/projects/finance-dashboard/process';
+import {LoadTransactions} from "@/app/projects/finance-dashboard/data";
 
 export default function FinanceDashboard() {
     return (
