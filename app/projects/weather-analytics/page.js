@@ -4,7 +4,7 @@ import ProjectHeader from "@/components/ProjectHeader";
 export default function WeatherAnalytics() {
     return (
         <main>
-            <ProjectHeader title="Finance Dashboard" subtitle="Personal financial insights"/>
+            <ProjectHeader title="Weather Analytics" subtitle="Current weather conditions across major cities in Vietnam and Asia"/>
             <VietnamCitiesSection/>
             <AsianCitiesSection/>
         </main>

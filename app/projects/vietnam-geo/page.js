@@ -25,7 +25,7 @@ import ProjectHeader from "@/components/ProjectHeader";
 export default function VietnamGeo() {
     return (
         <main>
-            <ProjectHeader title="Weather Analytics" subtitle="Current weather conditions across major cities in Vietnam and Asia"/>
+            <ProjectHeader title="Vietnam Geography" subtitle="Vietnam Geography Dashboard"/>
             <UnitStatCards/>
             <ComparisonCards/>
             <ProvinceCommunalUnitsChart/>
