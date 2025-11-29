@@ -41,6 +41,13 @@ function ProjectsGrid() {
             description: "Personal finance tracker with transaction management, category breakdown charts, and spending analysis to monitor income and expenses.",
             path: "/projects/finance-dashboard",
             isPrototype: true
+        },
+        {
+            id: 3,
+            name: "Weather Analytics",
+            description: "Real-time weather dashboard showing current conditions, temperature, humidity, and wind speed for major cities across Vietnam and Asia.",
+            path: "/projects/weather-analytics",
+            isPrototype: true
         }
     ];
 
