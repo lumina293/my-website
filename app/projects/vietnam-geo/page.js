@@ -2,7 +2,7 @@
 
 import {Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from "recharts"
 import VietnamGeoHeader from '@/components/VietnamGeoHeader';
-import Provinces from "@/app/vietnam-geo/data";
+import Provinces from "@/app/projects/vietnam-geo/data";
 import {
     countProvinces,
     countCities,
@@ -20,7 +20,7 @@ import {
     findTop10PopularCommuneNames,
     findTop10PopularWordsInCommuneName
 
-} from "@/app/vietnam-geo/process";
+} from "@/app/projects/vietnam-geo/process";
 
 export default function VietnamGeo() {
     return (

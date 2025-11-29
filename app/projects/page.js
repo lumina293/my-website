@@ -32,7 +32,7 @@ function ProjectsGrid() {
             id: 1,
             name: "Vietnam Geo Dashboard",
             description: "Interactive dashboard visualizing Vietnam's administrative geography, including provinces, communes, population, and area statistics with charts and comparisons.",
-            path: "/vietnam-geo",
+            path: "/projects/vietnam-geo",
             isPrototype: false
         },
         {
