@@ -1,24 +1,22 @@
 "use client"
 
-import {Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from "recharts"
+import {Bar, BarChart, CartesianGrid, Legend, ResponsiveContainer, Tooltip, XAxis, YAxis} from "recharts"
 import Provinces from "@/app/projects/vietnam-geo/data";
 import {
-    countProvinces,
     countCities,
+    countCommunalUnitsByProvince,
     countCommunes,
-    countWards,
+    countProvinces,
     countSpecializedZones,
+    countWards,
     findBiggestProvinceByArea,
-    findSmallestProvinceByArea,
-    findMostPopulatedProvince,
     findLeastPopulatedProvince,
+    findMostPopulatedProvince,
     findProvinceWithHighestDensity,
     findProvinceWithLowestDensity,
-    findProvinceWithMostCommunalUnits,
-    findProvinceWithLeastCommunalUnits,
+    findSmallestProvinceByArea,
     findTop10PopularCommuneNames,
-    findTop10PopularWordsInCommuneName
-
+    findTop10PopularWordsInCommuneName,
 } from "@/app/projects/vietnam-geo/process";
 import ProjectHeader from "@/components/ProjectHeader";
 
@@ -130,31 +128,16 @@ function ComparisonCards() {
         }
     };
 
-    let mostCommunesProvince = findProvinceWithMostCommunalUnits(Provinces)
-    let leastCommunesProvince = findProvinceWithLeastCommunalUnits(Provinces)
-    const communalUnitData = {
-        category: "Communal units",
-        unit: "units",
-        highest: {
-            name: mostCommunesProvince.name,
-            value: mostCommunesProvince.communes.length
-        },
-        lowest: {
-            name: leastCommunesProvince.name,
-            value: leastCommunesProvince.communes.length
-        }
-    };
     return (
         <div className="container mx-auto px-4 py-8">
             <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
                     Comparisons
                 </h2>
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     <ComparisonCard {...areaData} />
                     <ComparisonCard {...populationData} />
                     <ComparisonCard {...densityData} />
-                    <ComparisonCard {...communalUnitData} />
                 </div>
             </section>
         </div>
@@ -202,48 +185,12 @@ function ComparisonCard({category, unit, highest, lowest}) {
 }
 
 function ProvinceCommunalUnitsChart() {
-    let provinces = [
-        {name: "Ho Chi Minh", totalUnits: 322, totalCommunes: 58, totalWards: 259, totalSpecializedZones: 5},
-        {name: "Hanoi", totalUnits: 584, totalCommunes: 386, totalWards: 194, totalSpecializedZones: 4},
-        {name: "Thanh Hoa", totalUnits: 556, totalCommunes: 520, totalWards: 34, totalSpecializedZones: 2},
-        {name: "Nghe An", totalUnits: 460, totalCommunes: 425, totalWards: 33, totalSpecializedZones: 2},
-        {name: "Dong Nai", totalUnits: 173, totalCommunes: 96, totalWards: 76, totalSpecializedZones: 1},
-        {name: "Binh Duong", totalUnits: 91, totalCommunes: 35, totalWards: 55, totalSpecializedZones: 1},
-        {name: "Da Nang", totalUnits: 56, totalCommunes: 11, totalWards: 45, totalSpecializedZones: 0},
-        {name: "Hai Phong", totalUnits: 178, totalCommunes: 116, totalWards: 61, totalSpecializedZones: 1},
-        {name: "Can Tho", totalUnits: 85, totalCommunes: 58, totalWards: 27, totalSpecializedZones: 0},
-        {name: "Dong Thap", totalUnits: 134, totalCommunes: 122, totalWards: 12, totalSpecializedZones: 0},
-        {name: "Kien Giang", totalUnits: 144, totalCommunes: 130, totalWards: 13, totalSpecializedZones: 1},
-        {name: "Lam Dong", totalUnits: 148, totalCommunes: 130, totalWards: 17, totalSpecializedZones: 1},
-        {name: "Long An", totalUnits: 184, totalCommunes: 170, totalWards: 13, totalSpecializedZones: 1},
-        {name: "Tien Giang", totalUnits: 136, totalCommunes: 119, totalWards: 16, totalSpecializedZones: 1},
-        {name: "An Giang", totalUnits: 134, totalCommunes: 119, totalWards: 14, totalSpecializedZones: 1},
-        {name: "Ba Ria-Vung Tau", totalUnits: 81, totalCommunes: 60, totalWards: 20, totalSpecializedZones: 1},
-        {name: "Bac Giang", totalUnits: 213, totalCommunes: 199, totalWards: 13, totalSpecializedZones: 1},
-        {name: "Bac Ninh", totalUnits: 111, totalCommunes: 90, totalWards: 20, totalSpecializedZones: 1},
-        {name: "Ben Tre", totalUnits: 155, totalCommunes: 142, totalWards: 12, totalSpecializedZones: 1},
-        {name: "Binh Dinh", totalUnits: 165, totalCommunes: 148, totalWards: 16, totalSpecializedZones: 1},
-        {name: "Binh Phuoc", totalUnits: 89, totalCommunes: 79, totalWards: 9, totalSpecializedZones: 1},
-        {name: "Binh Thuan", totalUnits: 109, totalCommunes: 94, totalWards: 14, totalSpecializedZones: 1},
-        {name: "Ca Mau", totalUnits: 107, totalCommunes: 96, totalWards: 10, totalSpecializedZones: 1},
-        {name: "Cao Bang", totalUnits: 181, totalCommunes: 173, totalWards: 7, totalSpecializedZones: 1},
-        {name: "Dak Lak", totalUnits: 152, totalCommunes: 137, totalWards: 14, totalSpecializedZones: 1},
-        {name: "Dak Nong", totalUnits: 71, totalCommunes: 64, totalWards: 6, totalSpecializedZones: 1},
-        {name: "Dien Bien", totalUnits: 115, totalCommunes: 110, totalWards: 4, totalSpecializedZones: 1},
-        {name: "Gia Lai", totalUnits: 163, totalCommunes: 150, totalWards: 12, totalSpecializedZones: 1},
-        {name: "Ha Giang", totalUnits: 193, totalCommunes: 187, totalWards: 5, totalSpecializedZones: 1},
-        {name: "Ha Nam", totalUnits: 116, totalCommunes: 106, totalWards: 9, totalSpecializedZones: 1},
-        {name: "Ha Tinh", totalUnits: 223, totalCommunes: 204, totalWards: 18, totalSpecializedZones: 1},
-        {name: "Hau Giang", totalUnits: 72, totalCommunes: 63, totalWards: 8, totalSpecializedZones: 1},
-        {name: "Hoa Binh", totalUnits: 152, totalCommunes: 144, totalWards: 7, totalSpecializedZones: 1},
-        {name: "Hung Yen", totalUnits: 152, totalCommunes: 140, totalWards: 11, totalSpecializedZones: 1}
-    ];
-
+    let provinces = countCommunalUnitsByProvince(Provinces)
     return (
         <div className="container mx-auto px-4 py-8">
             <section>
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-                    Communal Unit Breakdown by Province (Mockup data)
+                    Communal Unit Breakdown by Province
                 </h2>
                 <div className="bg-white rounded-lg shadow p-6">
                     <div className="h-[600px] w-full">

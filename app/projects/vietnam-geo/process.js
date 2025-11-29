@@ -121,24 +121,30 @@ export function findProvinceWithLowestDensity(provinces) {
     return lowestDensityProvince;
 }
 
-export function findProvinceWithMostCommunalUnits(provinces) {
-    let provinceWithMostCommunes = provinces[0]
+export function countCommunalUnitsByProvince(provinces) {
+    let communalUnitsByProvince = []
     for (let i = 0; i < provinces.length; i++) {
-        if (provinces[i].communes.length > provinceWithMostCommunes.communes.length) {
-            provinceWithMostCommunes = provinces[i]
+        let currentProvince = {
+            name: provinces[i].name,
+            totalUnits: provinces[i].communes.length,
+            totalCommunes: 0,
+            totalWards: 0,
+            totalSpecializedZones: 0,
         }
-    }
-    return provinceWithMostCommunes;
-}
-
-export function findProvinceWithLeastCommunalUnits(provinces) {
-    let provinceWithLeastCommunes = provinces[0]
-    for (let i = 0; i < provinces.length; i++) {
-        if (provinces[i].communes.length < provinceWithLeastCommunes.communes.length) {
-            provinceWithLeastCommunes = provinces[i]
+        for (let j = 0; j < provinces[i].communes.length; j++) {
+            let communeType = provinces[i].communes[j].type
+            if (communeType === "Xã") {
+                currentProvince.totalCommunes += 1
+            } else if (communeType === "Phường") {
+                currentProvince.totalWards += 1
+            } else {
+                currentProvince.totalSpecializedZones += 1
+            }
         }
+        communalUnitsByProvince.push(currentProvince)
     }
-    return provinceWithLeastCommunes;
+    communalUnitsByProvince.sort((a, b) => b.totalUnits - a.totalUnits)
+    return communalUnitsByProvince
 }
 
 export function findTop10PopularCommuneNames(provinces) {
