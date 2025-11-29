@@ -1,13 +1,13 @@
 "use client"
 
 // file: app/projects/investment-portfolio/page.js
-import InvestmentPortfolioHeader from '@/components/InvestmentPortfolioHeader';
 import { PieChart, Pie, Cell, ResponsiveContainer, Tooltip, Legend, LineChart, Line, XAxis, YAxis, CartesianGrid } from "recharts"
+import ProjectHeader from "@/components/ProjectHeader";
 
 export default function InvestmentPortfolio() {
     return (
         <main>
-            <InvestmentPortfolioHeader/>
+            <ProjectHeader title="Investment Portfolio" subtitle="Track your investment performance and asset allocation"/>
             <PortfolioSummaryCards/>
             <PortfolioBreakdownChart/>
             <PerformanceTrendsChart/>

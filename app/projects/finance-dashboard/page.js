@@ -12,7 +12,7 @@ import {
     XAxis,
     YAxis, Bar
 } from "recharts"
-import FinanceDashboardHeader from '@/components/FinanceDashboardHeader';
+import ProjectHeader from '@/components/ProjectHeader';
 import {
     calculateTotalIncome,
     calculateTotalExpense,
@@ -25,7 +25,7 @@ import {LoadTransactions} from "@/app/projects/finance-dashboard/data";
 export default function FinanceDashboard() {
     return (
         <main>
-            <FinanceDashboardHeader/>
+            <ProjectHeader title="Finance Dashboard" subtitle="Personal financial insights"/>
             <div className="container mx-auto px-4 py-8">
                 <div className="flex flex-col lg:flex-row gap-6">
                     {/* Left Sidebar - Transaction Table (1/3) */}

@@ -1,7 +1,6 @@
 "use client"
 
 import {Bar, BarChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer} from "recharts"
-import VietnamGeoHeader from '@/components/VietnamGeoHeader';
 import Provinces from "@/app/projects/vietnam-geo/data";
 import {
     countProvinces,
@@ -21,11 +20,12 @@ import {
     findTop10PopularWordsInCommuneName
 
 } from "@/app/projects/vietnam-geo/process";
+import ProjectHeader from "@/components/ProjectHeader";
 
 export default function VietnamGeo() {
     return (
         <main>
-            <VietnamGeoHeader/>
+            <ProjectHeader title="Weather Analytics" subtitle="Current weather conditions across major cities in Vietnam and Asia"/>
             <UnitStatCards/>
             <ComparisonCards/>
             <ProvinceCommunalUnitsChart/>
